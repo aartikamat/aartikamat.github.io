@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arati Uday Kamat — Independent Researcher</title>
+  <meta name="description" content="Independent researcher working on algorithmic DEX trading, counterfactual analysis, and post-rejection sampling methodology. Publications on SSRN and Zenodo.">
+  <meta name="author" content="Arati Uday Kamat">
+  <meta name="keywords" content="Arati Uday Kamat, Arati Kamat, algorithmic trading, DEX trading, counterfactual analysis, post-rejection sampling, hour-aware risk management, cryptocurrency research, independent researcher">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Arati Uday Kamat — Independent Researcher">
+  <meta property="og:description" content="Algorithmic DEX trading, counterfactual analysis, post-rejection sampling. Published on SSRN and Zenodo.">
+  <meta property="og:url" content="https://aartikamat.github.io">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arati Uday Kamat — Independent Researcher">
+  <meta name="twitter:description" content="Algorithmic DEX trading, counterfactual analysis, post-rejection sampling.">
+
+  <!-- Structured data — tells Google this is a Person entity with all linked profiles -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arati Uday Kamat",
+    "alternateName": ["Arati Kamat", "Kamat, Arati Uday"],
+    "jobTitle": "Independent Researcher",
+    "description": "Independent researcher in algorithmic DEX trading, counterfactual analysis, and post-rejection sampling methodology.",
+    "url": "https://aartikamat.github.io",
+    "image": "https://aartikamat.github.io/avatar.jpg",
+    "sameAs": [
+      "https://orcid.org/0009-0000-4781-312X",
+      "https://ssrn.com/author=11111069",
+      "https://scholar.google.com/citations?user=CWpdnloAAAAJ",
+      "https://independent.academia.edu/AratiKamat2",
+      "https://github.com/aartikamat",
+      "https://zenodo.org/me"
+    ],
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Independent Researcher"
+    },
+    "knowsAbout": [
+      "Algorithmic Trading",
+      "Decentralized Exchange (DEX)",
+      "Counterfactual Analysis",
+      "Post-Rejection Sampling",
+      "Cryptocurrency Research",
+      "Causal Inference",
+      "Hour-Aware Risk Management"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --panel: #111827;
+      --accent: #60a5fa;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700; }
+    .role { color: var(--muted); font-size: 1.05rem; margin-bottom: 1rem; }
+    .tagline {
+      color: var(--text);
+      font-size: 1rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin: 2rem 0 1rem 0;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .paper {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .paper-title { font-weight: 600; margin-bottom: 0.3rem; color: var(--text); }
+    .paper-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .paper-abstract { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 0.75rem; }
+    .paper-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-right: 1rem;
+    }
+    .paper-links a:hover { text-decoration: underline; }
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .profile-link {
+      display: block;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color 0.15s;
+    }
+    .profile-link:hover { border-color: var(--accent); }
+    .profile-label { display: block; color: var(--accent); font-size: 0.85rem; margin-bottom: 0.15rem; }
+    .profile-value { display: block; color: var(--muted); font-size: 0.88rem; }
+    .code-repo {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(96, 165, 250, 0.15);
+      color: var(--accent);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-family: ui-monospace, "SF Mono", Consolas, monospace;
+      margin-left: 0.4rem;
+    }
+    code {
+      font-family: ui-monospace, "SF Mono", Consolas, monospace;
+      background: rgba(96, 165, 250, 0.08);
+      color: var(--accent);
+      padding: 0.05rem 0.3rem;
+      border-radius: 3px;
+      font-size: 0.88rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .citation-tip {
+      background: rgba(96, 165, 250, 0.05);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Arati Uday Kamat</h1>
+      <p class="role">Independent Researcher</p>
+      <p class="tagline">Algorithmic DEX trading · counterfactual analysis · post-rejection sampling methodology</p>
+    </header>
+
+    <h2>Working papers</h2>
+
+    <article class="paper">
+      <h3 class="paper-title">Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading: A Multi-Layer Intelligence Framework</h3>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6564803 · Zenodo DOI <code>10.5281/zenodo.19670719</code></p>
+      <p class="paper-abstract">Introduces a multi-layer intelligence framework for autonomous memecoin trading that incorporates hour-aware adaptive risk thresholds. Analyzes historical trade outcomes against UTC hour-of-day to identify high-variance time windows and dynamically adjust position entry, stop-loss, and filter strictness. Backtests on Solana DEX data demonstrate reduced drawdown relative to static-threshold baselines.</p>
+      <p class="paper-links">
+        <a href="http://ssrn.com/abstract=6564803">SSRN ↗</a>
+        <a href="https://doi.org/10.5281/zenodo.19670719">Zenodo DOI ↗</a>
+      </p>
+    </article>
+
+    <article class="paper">
+      <h3 class="paper-title">Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading</h3>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6607301 · Zenodo DOI <code>10.5281/zenodo.19671657</code></p>
+      <p class="paper-abstract">Introduces Post-Rejection Follow-up Sampling (PRFS), a methodology for measuring what would have happened had a rejected trade been executed. By tracking forward price trajectories of rejected tokens over a fixed window, PRFS enables quantitative filter-quality evaluation. Applied to live Solana DEX trading data, the method identifies filters that reject profitable opportunities at higher rates than unprofitable ones, surfacing pruning candidates.</p>
+      <p class="paper-links">
+        <a href="http://ssrn.com/abstract=6607301">SSRN ↗</a>
+        <a href="https://doi.org/10.5281/zenodo.19671657">Zenodo DOI ↗</a>
+        <a href="https://github.com/aartikamat/post-rejection-sampling">Code (GitHub) ↗</a>
+      </p>
+    </article>
+
+    <div class="citation-tip">
+      <strong>Citing this work:</strong> each paper has a permanent DOI. GitHub repos have <code>CITATION.cff</code> files that generate BibTeX automatically via the "Cite this repository" button.
+    </div>
+
+    <h2>Code</h2>
+
+    <div class="code-repo">
+      <h3 class="paper-title">post-rejection-sampling <span class="badge">v1.0.0</span></h3>
+      <p class="paper-meta" style="margin-bottom: 0.5rem;">Reference implementation of PRFS · MIT License · Python 3.9+</p>
+      <p class="paper-abstract" style="margin-bottom: 0.5rem;">Clean reference implementation with <code>RejectionTracker</code>, <code>FollowupSampler</code>, and <code>FilterEvaluator</code> classes. Runs on synthetic data; no external infrastructure needed.</p>
+      <p class="paper-links">
+        <a href="https://github.com/aartikamat/post-rejection-sampling">GitHub ↗</a>
+      </p>
+    </div>
+
+    <h2>Profiles</h2>
+
+    <div class="profiles">
+      <a class="profile-link" href="https://orcid.org/0009-0000-4781-312X">
+        <span class="profile-label">ORCID</span>
+        <span class="profile-value">0009-0000-4781-312X</span>
+      </a>
+      <a class="profile-link" href="https://ssrn.com/author=11111069">
+        <span class="profile-label">SSRN</span>
+        <span class="profile-value">Author page (2 papers)</span>
+      </a>
+      <a class="profile-link" href="https://zenodo.org/me">
+        <span class="profile-label">Zenodo</span>
+        <span class="profile-value">3 DOIs (2 papers + 1 code)</span>
+      </a>
+      <a class="profile-link" href="https://github.com/aartikamat">
+        <span class="profile-label">GitHub</span>
+        <span class="profile-value">@aartikamat</span>
+      </a>
+      <a class="profile-link" href="https://scholar.google.com/citations?user=CWpdnloAAAAJ">
+        <span class="profile-label">Google Scholar</span>
+        <span class="profile-value">Author profile</span>
+      </a>
+      <a class="profile-link" href="https://independent.academia.edu/AratiKamat2">
+        <span class="profile-label">Academia.edu</span>
+        <span class="profile-value">@AratiKamat2</span>
+      </a>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Research collaboration inquiries welcome. Email via my <a href="https://orcid.org/0009-0000-4781-312X" style="color: var(--accent);">ORCID profile</a>.</p>
+
+    <footer>
+      <p>Last updated April 2026 · <a href="https://github.com/aartikamat/post-rejection-sampling" style="color: var(--muted);">Source on GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
