@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or paper, please cite as below."
+title: "Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events"
+authors:
+  - family-names: "Kamat"
+    given-names: "A. U."
+    orcid: "https://orcid.org/0009-0000-4781-312X"
+date-released: "2026-04-23"
+doi: "10.5281/zenodo.19720041"
+url: "https://doi.org/10.5281/zenodo.19720041"
+type: article

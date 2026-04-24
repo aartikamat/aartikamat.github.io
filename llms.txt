@@ -1,0 +1,15 @@
+# Arati U. Kamat
+> Independent researcher in crypto market microstructure and algorithmic trading.
+
+Landing: https://aartikamat.github.io
+ORCID: https://orcid.org/0009-0000-4781-312X
+
+## Papers
+- [Hour-Aware Memecoin Trading: Time-of-Day Effects in On-Chain Liquidity](https://aartikamat.github.io)
+  Trading memecoins at different hours of the day gives very different outcomes. We show that avoiding the 9 worst hours preserves most of the profit while cutting risk in half.
+
+- [Post-Rejection Counterfactual Sampling for Algorithmic Trading Filter Evaluation](https://aartikamat.github.io)
+  How do you know your trading filter is rejecting bad trades, not good ones? We track what happens after each rejection to measure the miss-rate honestly.
+
+- [Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events](https://doi.org/10.5281/zenodo.19720041) · DOI: 10.5281/zenodo.19720041
+  We measured how often our trading filter is right vs. wrong across 2,400 rejection events: for every 1 good trade blocked, the filters prevented approximately 15 losing trades. Every individual filter rule is net positive.

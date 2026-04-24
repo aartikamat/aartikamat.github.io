@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Arati U. Kamat — Publications</title>
+    <link>https://aartikamat.github.io</link>
+    <description>Working papers and preprints by Arati U. Kamat.</description>
+    <language>en</language>
+    <item>
+      <title>Hour-Aware Memecoin Trading: Time-of-Day Effects in On-Chain Liquidity</title>
+      <link>https://aartikamat.github.io</link>
+      <description>Trading memecoins at different hours of the day gives very different outcomes. We show that avoiding the 9 worst hours preserves most of the profit while cutting risk in half.</description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      
+    </item>
+    <item>
+      <title>Post-Rejection Counterfactual Sampling for Algorithmic Trading Filter Evaluation</title>
+      <link>https://aartikamat.github.io</link>
+      <description>How do you know your trading filter is rejecting bad trades, not good ones? We track what happens after each rejection to measure the miss-rate honestly.</description>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
+      
+    </item>
+    <item>
+      <title>Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</title>
+      <link>https://doi.org/10.5281/zenodo.19720041</link>
+      <description>We measured how often our trading filter is right vs. wrong across 2,400 rejection events: for every 1 good trade blocked, the filters prevented approximately 15 losing trades. Every individual filter rule is net positive.</description>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">10.5281/zenodo.19720041</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Arati U. Kamat",
+  "description": "Independent researcher in crypto market microstructure, algorithmic trading, and filter design for high-churn token markets. Focus on survivorship-bias-free evaluation of rejection-based strategies.",
+  "url": "https://aartikamat.github.io",
+  "identifier": "https://orcid.org/0009-0000-4781-312X",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=pending",
+    "https://www.semanticscholar.org/author/pending",
+    "https://openalex.org/authors/pending",
+    "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=pending",
+    "https://github.com/aratikamat"
+  ]
+}
+</script>
