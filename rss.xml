@@ -21,7 +21,7 @@
     </item>
     <item>
       <title>Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</title>
-      <link>https://doi.org/10.5281/zenodo.19720041</link>
+      <link>https://ssrn.com/abstract=6638259</link>
       <description>We measured how often our trading filter is right vs. wrong across 2,400 rejection events: for every 1 good trade blocked, the filters prevented approximately 15 losing trades. Every individual filter rule is net positive.</description>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">10.5281/zenodo.19720041</guid>
