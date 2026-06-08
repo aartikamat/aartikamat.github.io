@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msvalidate.01" content="613D9E9491B3717EE4EBD172DB45983D" />
   <title>Arati Uday Kamat — Independent Researcher</title>
-  <meta name="description" content="Independent researcher working on algorithmic DEX trading, counterfactual analysis, and post-rejection sampling methodology. Publications on SSRN and Zenodo.">
+  <meta name="description" content="Independent researcher working on algorithmic DEX trading, counterfactual analysis, and post-rejection sampling methodology. Publications on arXiv, SSRN, Zenodo, IEEE DataPort, JOSS, Kaggle.">
   <meta name="author" content="Arati Uday Kamat">
-  <meta name="keywords" content="Arati Uday Kamat, Arati Kamat, algorithmic trading, DEX trading, counterfactual analysis, post-rejection sampling, hour-aware risk management, cryptocurrency research, independent researcher, RED-2400, public benchmark dataset">
+  <meta name="keywords" content="Arati Uday Kamat, Arati Kamat, algorithmic trading, DEX trading, counterfactual analysis, post-rejection sampling, hour-aware risk management, cryptocurrency research, independent researcher, RED-2400, public benchmark dataset, IEEE DataPort, JOSS replication toolkit, Web of Science PYY-2705-2026">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Arati Uday Kamat — Independent Researcher">
-  <meta property="og:description" content="Algorithmic DEX trading, counterfactual analysis, post-rejection sampling. Published on SSRN and Zenodo.">
+  <meta property="og:description" content="Algorithmic DEX trading, counterfactual analysis, post-rejection sampling. Published on arXiv, SSRN, Zenodo, IEEE DataPort, JOSS, Kaggle.">
   <meta property="og:url" content="https://aartikamat.github.io">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Arati Uday Kamat — Independent Researcher">
@@ -33,10 +33,14 @@
       "https://scholar.google.com/citations?user=CWpdnloAAAAJ",
       "https://independent.academia.edu/AratiKamat2",
       "https://github.com/aartikamat",
-      "https://zenodo.org/me"
+      "https://zenodo.org/me",
+      "https://www.webofscience.com/wos/author/record/PYY-2705-2026",
+      "https://ieee-dataport.org/node/107102",
+      "https://www.kaggle.com/aratiudaykamat",
+      "https://arxiv.org/a/kamat_a_2"
     ],
     "affiliation": {"@type": "Organization", "name": "Independent Researcher"},
-    "knowsAbout": ["Algorithmic Trading", "Decentralized Exchange (DEX)", "Counterfactual Analysis", "Post-Rejection Sampling", "Cryptocurrency Research", "Causal Inference", "Hour-Aware Risk Management"]
+    "knowsAbout": ["Algorithmic Trading", "Decentralized Exchange (DEX)", "Counterfactual Analysis", "Post-Rejection Sampling", "Cryptocurrency Research", "Causal Inference", "Hour-Aware Risk Management", "Benchmark Datasets", "Replication Studies"]
   }
   </script>
 
@@ -64,11 +68,25 @@
     "name": "RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels",
     "author": [{"@type": "Person", "name": "Kamat, Arati U.", "identifier": "https://orcid.org/0009-0000-4781-312X"}],
     "datePublished": "2026-05-02",
-    "description": "First public benchmark dataset of algorithmically-rejected DEX trading events with linked post-rejection outcome trajectories. 6,659 rejection events, 169,122 outcome observations, 1,836 graveyard snapshots over the window 2026-04-10 to 2026-05-02 UTC. Built so other researchers can replicate filter-precision claims directly rather than only accept-side outcomes. CC-BY-4.0 licensed.",
+    "description": "First public benchmark dataset of algorithmically-rejected DEX trading events with linked post-rejection outcome trajectories. 6,659 rejection events, 169,122 outcome observations, 1,836 graveyard snapshots over the window 2026-04-10 to 2026-05-02 UTC. CC-BY-4.0 licensed. Deposited across arXiv, SSRN, Zenodo, Kaggle, and IEEE DataPort.",
     "keywords": "algorithmic trading, public benchmark dataset, decentralized exchange, rejected trades, outcome labels, counterfactual evaluation, RED-2400, filter validation",
-    "identifier": ["https://arxiv.org/abs/2605.12151", "https://doi.org/10.2139/ssrn.6702198", "https://doi.org/10.5281/zenodo.20011631", "https://doi.org/10.5281/zenodo.19989075"],
+    "identifier": ["https://arxiv.org/abs/2605.12151", "https://doi.org/10.2139/ssrn.6702198", "https://doi.org/10.5281/zenodo.20011631", "https://doi.org/10.5281/zenodo.19989075", "https://doi.org/10.5281/zenodo.19989074", "https://doi.org/10.21227/c36z-hk34", "https://doi.org/10.34740/kaggle/dsv/16682744"],
     "url": "https://arxiv.org/abs/2605.12151",
-    "sameAs": ["https://arxiv.org/abs/2605.12151", "https://ssrn.com/abstract=6702198", "https://doi.org/10.2139/ssrn.6702198", "https://doi.org/10.5281/zenodo.20011631", "https://doi.org/10.5281/zenodo.19989075"]
+    "sameAs": ["https://arxiv.org/abs/2605.12151", "https://ssrn.com/abstract=6702198", "https://doi.org/10.2139/ssrn.6702198", "https://doi.org/10.5281/zenodo.20011631", "https://doi.org/10.5281/zenodo.19989075", "https://doi.org/10.5281/zenodo.19989074", "https://doi.org/10.21227/c36z-hk34", "https://doi.org/10.34740/kaggle/dsv/16682744", "https://ieee-dataport.org/node/107102", "https://www.kaggle.com/datasets/aratiudaykamat/red-2400-rejected-trading-events-on-solana"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "RED-2400 Replication Toolkit",
+    "description": "Python toolkit for reproducible filter-precision auditing of the RED-2400 public benchmark. 18/18 byte-identical reproducibility tests passing. Submitted to Journal of Open Source Software (JOSS).",
+    "codeRepository": "https://github.com/aartikamat/red2400-replication-toolkit",
+    "author": {"@type": "Person", "name": "Kamat, Arati U.", "identifier": "https://orcid.org/0009-0000-4781-312X"},
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "url": "https://joss.theoj.org/papers/a440616519ce55b95631ec100c448318"
   }
   </script>
 
@@ -120,9 +138,10 @@
 
     <article class="paper">
       <h3 class="paper-title">Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading: A Multi-Layer Intelligence Framework</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6564803 · Manuscript DOI <code>10.5281/zenodo.19670719</code> · Dataset DOI <code>10.5281/zenodo.20043302</code></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv <code>submit/7684867</code> (in moderation) · SSRN abstract 6564803 · Manuscript DOI <code>10.5281/zenodo.19670719</code> · Dataset DOI <code>10.5281/zenodo.20043302</code> · In peer review at Ledger journal #632</p>
       <p class="paper-abstract">Introduces a multi-layer intelligence framework for autonomous memecoin trading that incorporates hour-aware adaptive risk thresholds. Analyzes historical trade outcomes against UTC hour-of-day to identify high-variance time windows and dynamically adjust position entry, stop-loss, and filter strictness. Backtests on Solana DEX data demonstrate reduced drawdown relative to static-threshold baselines.</p>
       <p class="paper-links">
+        <a href="https://arxiv.org/submit/7684867">arXiv ↗</a>
         <a href="http://ssrn.com/abstract=6564803">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.19670719">Manuscript DOI ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20043302">Dataset DOI ↗</a>
@@ -131,9 +150,10 @@
 
     <article class="paper">
       <h3 class="paper-title">Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6607301 · Manuscript DOI <code>10.5281/zenodo.19671657</code> · Dataset DOI <code>10.5281/zenodo.20043516</code></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv <code>submit/7684836</code> (in moderation) · SSRN abstract 6607301 · Manuscript DOI <code>10.5281/zenodo.19671657</code> · Dataset DOI <code>10.5281/zenodo.20043516</code></p>
       <p class="paper-abstract">Introduces Post-Rejection Follow-up Sampling (PRFS), a methodology for measuring what would have happened had a rejected trade been executed. By tracking forward price trajectories of rejected tokens over a fixed window, PRFS enables quantitative filter-quality evaluation. Applied to live Solana DEX trading data, the method identifies filters that reject profitable opportunities at higher rates than unprofitable ones, surfacing pruning candidates.</p>
       <p class="paper-links">
+        <a href="https://arxiv.org/submit/7684836">arXiv ↗</a>
         <a href="http://ssrn.com/abstract=6607301">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.19671657">Manuscript DOI ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20043516">Dataset DOI ↗</a>
@@ -143,7 +163,7 @@
 
     <article class="paper">
       <h3 class="paper-title">Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6638259 · Manuscript DOI <code>10.5281/zenodo.19720041</code> · Dataset DOI <code>10.5281/zenodo.19987697</code> · Under review at Quantitative Finance (RQUF-2026-0229)</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 6638259 · Manuscript DOI <code>10.5281/zenodo.19720041</code> · Dataset DOI <code>10.5281/zenodo.19987697</code> · In peer review at Algorithmic Finance (ALG-26-0027)</p>
       <p class="paper-abstract">Reports an at-scale empirical precision audit of eight filter rules operating in a live multi-strategy DEX trading fleet. Classifies approximately 2,400 unique rejection events over a fourteen-day operational window using an outcome schema extended from prior work (PRFS). Introduces the <em>early-death classification</em>: a rejected token's disappearance from the price oracle within sixty minutes is treated as an implicit positive save signal, justified by a sharply bimodal age distribution of single-sample events. Under this refinement, every active filter rule shows a net-positive precision verdict with an aggregate save-to-miss ratio of approximately fifteen to one; the conservative alternative (excluding early-death) yields approximately four to one.</p>
       <p class="paper-links">
         <a href="https://ssrn.com/abstract=6638259">SSRN ↗</a>
@@ -154,14 +174,25 @@
 
     <article class="paper">
       <h3 class="paper-title">RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv <code>2605.12151</code> [q-fin.TR] · SSRN abstract 6702198 · Manuscript DOI <code>10.5281/zenodo.20011631</code> · Dataset DOI <code>10.5281/zenodo.19989075</code></p>
-      <p class="paper-abstract">Releases the first public benchmark dataset of algorithmically-rejected DEX trading events with linked post-rejection outcome trajectories. 6,659 rejection events, 169,122 outcome observations, 1,836 graveyard snapshots over the window 2026-04-10 to 2026-05-02 UTC. Built so other researchers can replicate filter-precision claims directly rather than only accept-side outcomes. CC-BY-4.0 licensed. RED-2400 is the first window in a planned dataset series; subsequent windows extend the time horizon and enable regime-stratified analysis.</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv <code>2605.12151</code> [q-fin.TR] · SSRN abstract 6702198 · Multi-platform deposit: Zenodo + Kaggle + IEEE DataPort</p>
+      <p class="paper-abstract">First public benchmark dataset of algorithmically-rejected DEX trading events with linked post-rejection outcome trajectories. 6,659 rejection events, 169,122 outcome observations, 1,836 graveyard snapshots over the window 2026-04-10 to 2026-05-02 UTC. CC-BY-4.0 licensed. Deposited across five platforms (arXiv, SSRN, Zenodo, Kaggle, IEEE DataPort) for maximum discoverability and replication. RED-2400 is the first window in a planned dataset series; subsequent windows extend the time horizon and enable regime-stratified analysis.</p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2605.12151">arXiv ↗</a>
         <a href="https://ssrn.com/abstract=6702198">SSRN ↗</a>
-        <a href="https://doi.org/10.5281/zenodo.20011631">Manuscript DOI ↗</a>
-        <a href="https://doi.org/10.5281/zenodo.19989075">Dataset DOI ↗</a>
+        <a href="https://doi.org/10.5281/zenodo.19989074">Zenodo dataset DOI ↗</a>
+        <a href="https://doi.org/10.21227/c36z-hk34">IEEE DataPort DOI ↗</a>
+        <a href="https://www.kaggle.com/datasets/aratiudaykamat/red-2400-rejected-trading-events-on-solana">Kaggle ↗</a>
         <a href="https://github.com/aartikamat/red-2400-reader">GitHub reader ↗</a>
+      </p>
+    </article>
+
+    <article class="paper">
+      <h3 class="paper-title">RED-2400 Replication Toolkit: A Python Package for Reproducible Filter-Precision Auditing</h3>
+      <p class="paper-meta">Kamat, A. U. (2026) · JOSS submission <code>a440616519ce55b95631ec100c448318</code> · 18/18 byte-identical reproducibility tests passing</p>
+      <p class="paper-abstract">Python toolkit accompanying RED-2400. Packages the audit workflow as an installable library, includes a continuous-integration test suite that verifies the per-filter tables in the companion paper reproduce byte-identically against deposited reference outputs. License: MIT (toolkit) / CC-BY-4.0 (dataset).</p>
+      <p class="paper-links">
+        <a href="https://joss.theoj.org/papers/a440616519ce55b95631ec100c448318">JOSS submission ↗</a>
+        <a href="https://github.com/aartikamat/red2400-replication-toolkit">GitHub ↗</a>
       </p>
     </article>
 
@@ -172,11 +203,30 @@
     <h2>Code</h2>
 
     <div class="code-repo">
+      <h3 class="paper-title">red2400-replication-toolkit <span class="badge">v1.0.0</span></h3>
+      <p class="paper-meta" style="margin-bottom: 0.5rem;">JOSS submission · MIT License · Python · 18/18 byte-identical CI tests</p>
+      <p class="paper-abstract" style="margin-bottom: 0.5rem;">Full replication harness for the RED-2400 benchmark. <code>pip install red2400-toolkit</code>; verifies all per-filter precision tables byte-identically against deposited reference outputs.</p>
+      <p class="paper-links">
+        <a href="https://github.com/aartikamat/red2400-replication-toolkit">GitHub ↗</a>
+        <a href="https://joss.theoj.org/papers/a440616519ce55b95631ec100c448318">JOSS ↗</a>
+      </p>
+    </div>
+
+    <div class="code-repo">
       <h3 class="paper-title">post-rejection-sampling <span class="badge">v1.0.0</span></h3>
       <p class="paper-meta" style="margin-bottom: 0.5rem;">Reference implementation of PRFS · MIT License · Python 3.9+</p>
       <p class="paper-abstract" style="margin-bottom: 0.5rem;">Clean reference implementation with <code>RejectionTracker</code>, <code>FollowupSampler</code>, and <code>FilterEvaluator</code> classes. Runs on synthetic data; no external infrastructure needed.</p>
       <p class="paper-links">
         <a href="https://github.com/aartikamat/post-rejection-sampling">GitHub ↗</a>
+      </p>
+    </div>
+
+    <div class="code-repo">
+      <h3 class="paper-title">red-2400-reader <span class="badge">MIT</span></h3>
+      <p class="paper-meta" style="margin-bottom: 0.5rem;">Lightweight reader for the RED-2400 dataset · Python</p>
+      <p class="paper-abstract" style="margin-bottom: 0.5rem;">Minimal-dependency loader for the three RED-2400 files (rejections, outcomes, graveyard).</p>
+      <p class="paper-links">
+        <a href="https://github.com/aartikamat/red-2400-reader">GitHub ↗</a>
       </p>
     </div>
 
@@ -187,33 +237,72 @@
         <span class="profile-label">ORCID</span>
         <span class="profile-value">0009-0000-4781-312X</span>
       </a>
+      <a class="profile-link" href="https://arxiv.org/a/kamat_a_2">
+        <span class="profile-label">arXiv author page</span>
+        <span class="profile-value">kamat_a_2</span>
+      </a>
       <a class="profile-link" href="https://ssrn.com/author=11111069">
         <span class="profile-label">SSRN</span>
         <span class="profile-value">Author page (4 papers)</span>
       </a>
       <a class="profile-link" href="https://zenodo.org/me">
         <span class="profile-label">Zenodo</span>
-        <span class="profile-value">9 DOIs (4 papers + 4 datasets + 1 code)</span>
+        <span class="profile-value">9+ DOIs (papers + datasets + code)</span>
       </a>
       <a class="profile-link" href="https://github.com/aartikamat">
         <span class="profile-label">GitHub</span>
-        <span class="profile-value">@aartikamat</span>
+        <span class="profile-value">@aartikamat (4 public repos)</span>
       </a>
       <a class="profile-link" href="https://scholar.google.com/citations?user=CWpdnloAAAAJ">
         <span class="profile-label">Google Scholar</span>
         <span class="profile-value">Author profile</span>
       </a>
+      <a class="profile-link" href="https://www.webofscience.com/wos/author/record/PYY-2705-2026">
+        <span class="profile-label">Web of Science</span>
+        <span class="profile-value">ResearcherID PYY-2705-2026</span>
+      </a>
       <a class="profile-link" href="https://independent.academia.edu/AratiKamat2">
         <span class="profile-label">Academia.edu</span>
         <span class="profile-value">@AratiKamat2</span>
       </a>
+      <a class="profile-link" href="https://ieee-dataport.org/node/107102">
+        <span class="profile-label">IEEE DataPort</span>
+        <span class="profile-value">RED-2400 dataset deposit</span>
+      </a>
+      <a class="profile-link" href="https://www.kaggle.com/datasets/aratiudaykamat/red-2400-rejected-trading-events-on-solana">
+        <span class="profile-label">Kaggle</span>
+        <span class="profile-value">RED-2400 dataset deposit</span>
+      </a>
+    </div>
+
+    <h2>Peer review service</h2>
+
+    <div class="code-repo">
+      <p class="paper-abstract" style="margin-bottom: 0;">Registered as a reviewer across the following programs and platforms:</p>
+      <ul style="margin-top: 0.75rem; color: #cbd5e1; padding-left: 1.5rem;">
+        <li><strong>JOSS Reviewer Pool</strong> — Journal of Open Source Software</li>
+        <li><strong>F1000Research</strong> — reviewer application TrackingId 26156334</li>
+        <li><strong>TMLR Volunteer to Review</strong> — submitted on Paper 9391 (Adaptive Off-Policy Inference for M-Estimators Under Model Misspecification)</li>
+        <li><strong>Taylor &amp; Francis Excellence in Peer Review Program</strong></li>
+        <li><strong>Web of Science Reviewer Recognition</strong> (ex-Publons)</li>
+        <li><strong>OpenReview</strong> — profile active across 80+ venues (NeurIPS, ICML, ICLR, ARR, TMLR)</li>
+      </ul>
+    </div>
+
+    <h2>Memberships and patents</h2>
+    <div class="code-repo">
+      <ul style="color: #cbd5e1; padding-left: 1.5rem;">
+        <li><strong>IEEE Senior Member</strong> — elevation application in review (submitted 2026-05-10)</li>
+        <li><strong>IEEE Computational Finance and Economics Technical Committee (CFETC)</strong> — membership application submitted 2026-06-07</li>
+        <li><strong>PARIE</strong> — Provisional patent filed 2026-03-23, USPTO (non-provisional in counsel review)</li>
+      </ul>
     </div>
 
     <h2>Contact</h2>
-    <p>Research collaboration inquiries welcome. Email via my <a href="https://orcid.org/0009-0000-4781-312X" style="color: var(--accent);">ORCID profile</a>.</p>
+    <p>Academic correspondence: <code>arati.kamat@ieee.org</code>. Research collaboration inquiries welcome via my <a href="https://orcid.org/0009-0000-4781-312X" style="color: var(--accent);">ORCID profile</a>.</p>
 
     <footer>
-      <p>Last updated May 2026 · <a href="https://github.com/aartikamat/aartikamat.github.io" style="color: var(--muted);">Source on GitHub</a></p>
+      <p>Last updated June 2026 · <a href="https://github.com/aartikamat/aartikamat.github.io" style="color: var(--muted);">Source on GitHub</a></p>
     </footer>
   </div>
 </body>
