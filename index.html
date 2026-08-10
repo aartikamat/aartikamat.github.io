@@ -229,9 +229,9 @@
     </article>
 
     <article class="paper">
-      <h3 class="paper-title">Coordinated Sniper Cohorts on Pump.fun: Detection of 1,012 Persistent Wallet Rings and the Limits of Naive Causal Inference for First-Hour Buyer Flow</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02795</code> · Dataset DOI <code>10.5281/zenodo.20978741</code> · Companion dataset RED-COHORT-2026 · USPTO Provisional 64/099,108 covers detection methodology</p>
-      <p class="paper-abstract">Public reproducibility-grade dataset of 1,012 persistent sniper-cohort detections on Solana pump.fun bonding-curve marketplace, derived from 1,578,333 buyer events across 166,098 token launches observed 2026-06-12 to 2026-06-26. Two-stage detection pipeline: co-occurrence graph across launches, edge weight >= 3, union-find connected components, scored by (10 * launches hit) + (5 / max(mean first-buyer rank, 1)) + sqrt(total SOL committed). Reports +132.3 percent lift in first-30-minute buyer count under 3:1 random-matched design, but the lift does not survive activity-matched placebo, demonstrating a launch-quality selection effect rather than coordination-specific causal effect. Interpretation-honest release of the detection catalogue enables downstream causal-identification research.</p>
+      <h3 class="paper-title">Coordinated Sniper Cohorts on Pump.fun: Detection of 1,012 Persistent Wallet Rings and a Contamination-Adjusted Estimate of Coordination-Specific First-Hour Buyer-Flow Lift</h3>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02795</code> (v3 revision 2026-08-03) · Dataset DOI <code>10.5281/zenodo.20978741</code> · Companion dataset RED-COHORT-2026 · USPTO Provisional 64/099,108 covers detection methodology</p>
+      <p class="paper-abstract">Public reproducibility-grade dataset of 1,012 persistent sniper-cohort detections on Solana pump.fun bonding-curve marketplace, derived from 1,578,333 buyer events across 166,098 token launches observed 2026-06-11 to 2026-06-25 (13.38 days). Two-stage detection pipeline: intra-launch first-buyer-window extraction, then cross-launch persistent-cohort surfacing via union-find on co-occurrence graphs. Under a contamination-adjusted estimator that excludes cohort wallets' own events from the outcome, 1:1 nearest-neighbour propensity-score matching (0.2-SD caliper on ten launch-quality covariates) yields a first-30-minute buyer-count lift of +16.1% (95% CI [+13.0%, +19.4%]) on 5,419 matched pairs, with a first-30-minute SOL-inflow lift of +6.3% (95% CI [−0.5%, +15.1%]) not distinguishable from zero at 95% confidence. The naive contaminated same-universe pooled contrast on this corpus is +130.9%; approximately half of that is arithmetic contamination from cohort wallets' own events being counted in the outcome, and most of the remainder is absorbed by propensity-score matching. A 100-seed activity-matched placebo estimator produces median +189.6% (p5-p95 [+166.7%, +217.9%]) and is retained as a bias diagnostic rather than a falsification test. Interpretation-honest release of the detection catalogue enables downstream causal-identification research.</p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2607.02795">arXiv ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20978741">Zenodo dataset DOI ↗</a>
@@ -240,17 +240,16 @@
 
     <article class="paper">
       <h3 class="paper-title">Counterfactual Rejection Filter Ablation: An Empirical Application of Post-Rejection Follow-up Sampling to Solana Memecoin Trading</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN preliminary upload 7045818 (submitted 2026-07-03) · Dataset DOI <code>10.5281/zenodo.21149176</code> · Extends PRFS methodology (Paper 2)</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · Dataset concept DOI <code>10.5281/zenodo.21149175</code> · Extends PRFS methodology (Paper 2). SSRN submission rejected 2026-07-20 (topic policy); paper remains publicly available on Zenodo.</p>
       <p class="paper-abstract">Applies the Post-Rejection Follow-up Sampling framework to eight active filter rules operating on a live Solana DEX trading fleet. Systematic ablation shows every filter rejects a median-loser distribution, validating the aggregate save-to-miss ratios reported in prior work. Documents 158 counterfactual >10x winners across the observation window, with dominant reject-reason failure modes identified for downtrend_24h, marketcap_out_of_range, and multi_tf_fade rules. Naive outcome measurement systematically inverts these findings, motivating counterfactual-first evaluation for algorithmic decision systems.</p>
       <p class="paper-links">
-        <a href="https://ssrn.com/abstract=7045818">SSRN ↗</a>
-        <a href="https://doi.org/10.5281/zenodo.21149176">Zenodo dataset DOI ↗</a>
+        <a href="https://doi.org/10.5281/zenodo.21149175">Zenodo dataset concept DOI ↗</a>
       </p>
     </article>
 
     <article class="paper">
       <h3 class="paper-title">A Multi-Venue Solana/DeFi Microstructure Data Corpus: The RED-2400 Family v2</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN preliminary upload 7062579 (submitted 2026-07-05) · Corpus dataset paper covering five deposited datasets: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7062579 · In peer review at <em>Financial Innovation</em> (Springer / SWUFE), FINI-D-26-01358; corrected manuscript uploaded 2026-08-08, reinstatement pending · Corpus dataset paper covering five deposited datasets: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
       <p class="paper-abstract">Corpus-level dataset paper describing the RED-2400 family v2 of Solana / DeFi microstructure benchmarks. Five deposited datasets on Zenodo under CC-BY-4.0: RED-ORACLE-2026-v1 (Pyth oracle staleness for BTC/ETH/SOL), RED-ARB-2026-v1 (328,186 Solana CEX-vs-DEX spread observations across 32 DEX venues), RED-LIQ-2026-v1 (18,750 Ethereum Aave V3 liquidations + 4-chain lending-utilization panel), RED-BASIS-2026-v1 (BTC/ETH/SOL spot-perpetual basis on OKX), RED-BRIDGE-2026-v1 (360,714 Wormhole cross-chain messages). All five span a common 57.4-day 2026 window (2026-05-08 to 2026-07-05). Standardized schema conventions, cross-dataset lineage, and reproducibility manifests for external researchers extending the methodology.</p>
       <p class="paper-links">
         <a href="https://ssrn.com/abstract=7062579">SSRN ↗</a>
@@ -264,7 +263,7 @@
 
     <article class="paper">
       <h3 class="paper-title">Sniper Cohorts and Algorithmic Filter Rejections in Solana Memecoin Markets: Two-Window Replication of Lifecycle-Stage Population Separation</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7128818 · Dataset DOI <code>10.5281/zenodo.21399918</code> · Companion dataset LIFECYCLE-SEPARATION-2026-v1</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7128818 · In peer review at <em>Ledger</em> (University of Pittsburgh) #672; v3 revision uploaded 2026-08-08; Aug 18 editorial team meeting pending · Dataset DOI <code>10.5281/zenodo.21399918</code> · Companion dataset LIFECYCLE-SEPARATION-2026-v1</p>
       <p class="paper-abstract">Two independent algorithmic detection streams applied to the same Solana memecoin market during the same observation windows produce nearly disjoint token-set outputs. In the June 2026 window, 2 of 20,162 sniper-cohort-detected mints (0.010 percent) appear in the algorithmic rejection stream. In the July 2026 window, 5 of 623 cohort-detected mints (0.803 percent) appear. Cross-window cohort overlap between v1 and v2 is zero mints. The separation is structural: cohort detection operates at the pump.fun bonding-curve stage, while rejection filtering operates on PumpSwap and other post-graduation venues. Four alternative explanations (time-window artifact, data-source mismatch, DEX venue asymmetry, pipeline-version artifact) are systematically ruled out.</p>
       <p class="paper-links">
         <a href="https://ssrn.com/abstract=7128818">SSRN ↗</a>
@@ -285,7 +284,7 @@
     <article class="paper">
       <h3 class="paper-title">Dev-Wallet Silence Is Not a Rug Predictor on Solana Pump.fun: Empirical Evidence from a Positive-Class and Control-Panel Study</h3>
       <p class="paper-meta">Kamat, A. U. (2026) · Concept DOI <code>10.5281/zenodo.21434629</code> · Version 1.0 DOI <code>10.5281/zenodo.21434630</code> · Positive class n=52 rug events, control class n=91 non-rug wallets</p>
-      <p class="paper-abstract">Null-result empirical study testing whether dev-wallet transaction silence (>=6 hours) in the 24-hour window before a rug distinguishes rug tokens from non-rug tokens. Positive class (n=52 rug events) shows 96.15 percent silence rate (95 percent Wilson CI [87.0, 98.9]); control class (n=91 non-rug wallets) shows 98.90 percent silence rate (95 percent Wilson CI [94.0, 99.8]). Two-proportion z-test z=-1.10, p=0.27; Fisher's exact test p=0.30. Balanced accuracy 48.62 percent; Youden J index -2.75 percentage points. The silence signal fails as a rug predictor because non-rug dev wallets are also mostly silent in random 24-hour windows post-graduation. Finding is robust across silence-threshold sensitivity sweeps of {2, 4, 6, 12, 18, 24} hours. Deposited as SILENT-KILLER-2026-v1 reproducibility bundle. Target venue: Cryptoeconomic Systems (MIT Press).</p>
+      <p class="paper-abstract">Null-result empirical study testing whether dev-wallet transaction silence (>=6 hours) in the 24-hour window before a rug distinguishes rug tokens from non-rug tokens. Positive class (n=52 rug events) shows 96.15 percent silence rate (95 percent Wilson CI [87.0, 98.9]); control class (n=91 non-rug wallets) shows 98.90 percent silence rate (95 percent Wilson CI [94.0, 99.8]). Two-proportion z-test z=-1.10, p=0.27; Fisher's exact test p=0.30. Balanced accuracy 48.62 percent; Youden J index -2.75 percentage points. The silence signal fails as a rug predictor because non-rug dev wallets are also mostly silent in random 24-hour windows post-graduation. Finding is robust across silence-threshold sensitivity sweeps of {2, 4, 6, 12, 18, 24} hours. Deposited as SILENT-KILLER-2026-v1 reproducibility bundle. In peer review at <em>Journal of Trial and Error</em> (JOTE, Diamond OA), submission #187 (submitted 2026-08-06; awaiting triage).</p>
       <p class="paper-links">
         <a href="https://doi.org/10.5281/zenodo.21434630">Zenodo v1.0 ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21434629">Zenodo concept ↗</a>
@@ -438,7 +437,7 @@
         <li><strong>PARIE Provisional Patent #64/099,599</strong> — filed 2026-06-26 (multi-tenant SaaS browser extension architecture)</li>
         <li><strong>UDAY Provisional Patent #64/022,461</strong> — filed 2026-03-30 (counterfactual rejection auditing methodology)</li>
         <li><strong>UDAY Provisional Patent #64/099,108</strong> — filed 2026-06-25 (sniper cohort detection, bonding-curve dormancy detection, portfolio-level dynamic capital allocator, counterfactual rejection event tracker — 22 embodiments A-V)</li>
-        <li><strong>US Federal Trademark #99,719,845</strong> — PARIE brand mark</li>
+        <li><strong>PARIE US Federal Trademark application #99,719,845</strong> — filed 2026-03-23; Classes 009 + 042; status: non-final Office action issued 2026-08-04, examination pending (not yet registered)</li>
         <li><strong>ERC-8293</strong> — Counterfactual Rejection Event Log Ethereum Improvement Proposal (draft; sole author; under editorial review)</li>
       </ul>
     </div>
