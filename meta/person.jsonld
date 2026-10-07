@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Arati U. Kamat",
+  "description": "Independent researcher in financial market data measurement: on-chain market microstructure, public benchmark datasets, post-rejection follow-up sampling and preregistered studies.",
+  "url": "https://aartikamat.github.io",
+  "identifier": "https://orcid.org/0009-0000-4781-312X",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=CWpdnloAAAAJ",
+    "https://ssrn.com/author=11111069",
+    "https://github.com/aartikamat"
+  ]
+}
+</script>

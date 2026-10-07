@@ -1,0 +1,15 @@
+# Arati U. Kamat
+> Independent researcher in financial market data measurement: on-chain market microstructure, public benchmark datasets, post-rejection follow-up sampling and preregistered studies. Full list: https://aartikamat.github.io/publications.html
+
+Landing: https://aartikamat.github.io
+ORCID: https://orcid.org/0009-0000-4781-312X
+
+## Papers
+- [Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment](https://arxiv.org/abs/2606.08232)
+  A 15-day paper-traded deployment of an autonomous memecoin trading system (190 trades). The hour-of-day pattern is directional and not confirmatory, and removing the top three trades makes the cumulative return unprofitable. The contribution is measurement infrastructure and three design lessons.
+
+- [Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading](https://arxiv.org/abs/2606.08228)
+  A method for recording what rejected tokens do after a trading filter rejects them. Correction in preparation: in the deployed data the tracker sampled every 10 minutes and kept one record per token, so the follow-up schedule described in the posted versions was not realised.
+
+- [Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events](https://ssrn.com/abstract=6638259) · DOI: 10.5281/zenodo.19720040
+  Audits how many losing trades each filter avoided against how many winning trades it blocked. The posted versions are superseded: their wider headline ratio relied on an outcome tier that is withdrawn. A rebuilt analysis against a fair-game benchmark is in preparation.

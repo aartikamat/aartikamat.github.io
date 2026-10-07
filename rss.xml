@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Arati U. Kamat - Publications</title>
+    <link>https://aartikamat.github.io</link>
+    <description>Working papers and preprints by Arati U. Kamat.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment</title>
+      <link>https://arxiv.org/abs/2606.08232</link>
+      <description>A 15-day paper-traded deployment of an autonomous memecoin trading system (190 trades). The hour-of-day pattern is directional and not confirmatory, and removing the top three trades makes the cumulative return unprofitable. The contribution is measurement infrastructure and three design lessons.</description>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+      
+    </item>
+    <item>
+      <title>Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading</title>
+      <link>https://arxiv.org/abs/2606.08228</link>
+      <description>A method for recording what rejected tokens do after a trading filter rejects them. Correction in preparation: in the deployed data the tracker sampled every 10 minutes and kept one record per token, so the follow-up schedule described in the posted versions was not realised.</description>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
+      
+    </item>
+    <item>
+      <title>Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</title>
+      <link>https://ssrn.com/abstract=6638259</link>
+      <description>Audits how many losing trades each filter avoided against how many winning trades it blocked. The posted versions are superseded: their wider headline ratio relied on an outcome tier that is withdrawn. A rebuilt analysis against a fair-game benchmark is in preparation.</description>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">10.5281/zenodo.19720040</guid>
+    </item>
+  </channel>
+</rss>

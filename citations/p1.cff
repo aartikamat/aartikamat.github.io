@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or paper, please cite as below."
+title: "Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment"
+authors:
+  - family-names: "Kamat"
+    given-names: "A. U."
+    orcid: "https://orcid.org/0009-0000-4781-312X"
+date-released: "2026-04-12"
+doi: "10.5281/zenodo.19670718"
+url: "https://arxiv.org/abs/2606.08232"
+type: article
