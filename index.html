@@ -52,7 +52,7 @@
     "name": "Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events",
     "author": [{"@type": "Person", "name": "Kamat, Arati U.", "identifier": "https://orcid.org/0009-0000-4781-312X"}],
     "datePublished": "2026-04-23",
-    "description": "Precision audit of eight filter rules in a DEX trading system's filter stack, comparing the losing trades each filter avoided with the winning trades it blocked, using about 2,400 rejection events from a two-week window in April 2026. The posted versions are superseded: the outcome tier behind their headline ratio is withdrawn, and a rebuilt analysis against a fair-game benchmark is in preparation.",
+    "description": "Precision audit of eight filter rules in a DEX trading system's filter stack, comparing the losing trades each filter avoided with the winning trades it blocked, using about 2,400 rejection events from a two-week window in April 2026.",
     "keywords": "algorithmic trading, filter precision, decentralized exchange, rejection classification, save-to-miss ratio, counterfactual evaluation, market microstructure",
     "identifier": ["https://arxiv.org/abs/2607.02830", "https://doi.org/10.2139/ssrn.6638259", "https://doi.org/10.5281/zenodo.19720040"],
     "url": "https://arxiv.org/abs/2607.02830",
@@ -101,7 +101,7 @@
     "alternativeHeadline": "Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading",
     "author": [{"@type": "Person", "name": "Kamat, Arati U.", "identifier": "https://orcid.org/0009-0000-4781-312X"}],
     "datePublished": "2026-06-09",
-    "description": "Introduces Post-Rejection Follow-up Sampling (PRFS), an observational methodology in which a separate tracking process samples the price and liquidity of each rejected token from the same live data path used by the rejecting system. The reported estimand is the observed post-rejection forward return; no causal claim about a hypothetical accepted trade is made. A corrected version is in preparation: in the deployed data the tracker sampled every 10 minutes and kept one record per token, so the follow-up schedule described in the posted versions was not realised.",
+    "description": "Introduces Post-Rejection Follow-up Sampling (PRFS), an observational methodology in which a separate tracking process samples the price and liquidity of each rejected token from the same live data path used by the rejecting system. The reported estimand is the observed post-rejection forward return; no causal claim about a hypothetical accepted trade is made.",
     "keywords": "post-rejection follow-up sampling, observational measurement, algorithmic DEX trading, filter evaluation, coverage, market microstructure",
     "identifier": ["https://arxiv.org/abs/2606.08228", "https://ssrn.com/abstract=6607301", "https://doi.org/10.5281/zenodo.19671656", "https://doi.org/10.5281/zenodo.20043515"],
     "url": "https://arxiv.org/abs/2606.08228",
@@ -238,11 +238,10 @@
     </article>
     <article class="paper">
       <h3 class="paper-title">A Multi-Venue Solana/DeFi Microstructure Data Corpus: The RED-2400 Family v2</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2610.00005</code> · SSRN abstract 7062579 · Corpus dataset paper covering five deposited datasets: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7062579 (revised 29 September 2026) · Corpus dataset paper covering five deposited datasets: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
       <p class="paper-abstract">Corpus-level dataset paper describing the RED-2400 family v2 of Solana / DeFi microstructure benchmarks. Five deposited datasets on Zenodo under CC-BY-4.0: RED-ORACLE-2026 (Pyth Network prices and publication lags for BTC, ETH and SOL with OKX benchmark prices), RED-ARB-2026 (328,186 rows of Jupiter sell quotes against OKX prices for six Solana tokens), RED-LIQ-2026 (Aave V3 Ethereum liquidations, 3,547 distinct events in 18,750 rows, plus a six-chain lending-utilization panel), RED-BASIS-2026 (OKX spot-perpetual basis and funding observations for BTC, ETH and SOL), RED-BRIDGE-2026 (360,714 Wormhole cross-chain messages). All five cover a common window of about 57 days (2026-05-08 to 2026-07-05). Standardized schema conventions, cross-dataset lineage, and reproducibility manifests for external researchers extending the methodology.</p>
       <p class="paper-abstract"><strong>Version note:</strong> version 1.1 of each dataset (28 September 2026) updates the documentation; the data files are unchanged. <a href="version-notes.html#corpus">Details</a></p>
       <p class="paper-links">
-        <a href="https://arxiv.org/abs/2610.00005">arXiv ↗</a>
         <a href="https://ssrn.com/abstract=7062579">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21211109">RED-ORACLE Zenodo ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21211186">RED-ARB Zenodo ↗</a>
@@ -302,7 +301,7 @@
     <div class="code-repo">
       <h3 class="paper-title">red2400-replication-toolkit <span class="badge">v2.0.2</span></h3>
       <p class="paper-meta" style="margin-bottom: 0.5rem;">MIT License · Python · source on GitHub (not on PyPI)</p>
-      <p class="paper-abstract" style="margin-bottom: 0.5rem;">Replication harness for the RED-2400 benchmark. Release v2 attaches outcomes to each rejection event; a legacy mode reproduces the v1.0.0 token-pooled tables, which should not be cited as per-event results. The Software Heritage snapshot below is the 5 June 2026 (v1.0.0-era) code.</p>
+      <p class="paper-abstract" style="margin-bottom: 0.5rem;">Replication harness for the RED-2400 benchmark. Release v2 attaches outcomes to each rejection event. The Software Heritage snapshot below is the 5 June 2026 (v1.0.0-era) code.</p>
       <p class="paper-links">
         <a href="https://github.com/aartikamat/red2400-replication-toolkit">GitHub ↗</a>
         <a href="https://archive.softwareheritage.org/swh:1:rev:a85bf1ff1eb4af345752555a3a1844e5b172bf3e">Software Heritage ↗</a>
