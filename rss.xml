@@ -16,14 +16,14 @@
     <item>
       <title>Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading</title>
       <link>https://arxiv.org/abs/2606.08228</link>
-      <description>A method for recording what rejected tokens do after a trading filter rejects them. Correction in preparation: in the deployed data the tracker sampled every 10 minutes and kept one record per token, so the follow-up schedule described in the posted versions was not realised.</description>
+      <description>A method for recording what rejected tokens do after a trading filter rejects them. Version note: the deployed tracker sampled every 10 minutes and kept one record per token; a revised version describes this. The method is unchanged.</description>
       <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
       
     </item>
     <item>
       <title>Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</title>
       <link>https://ssrn.com/abstract=6638259</link>
-      <description>Audits how many losing trades each filter avoided against how many winning trades it blocked. The posted versions are superseded: their wider headline ratio relied on an outcome tier that is withdrawn. A rebuilt analysis against a fair-game benchmark is in preparation.</description>
+      <description>Audits how many losing trades each filter avoided against how many winning trades it blocked. Version note: a revised analysis against a fair-game benchmark replaces the headline ratio of the posted versions.</description>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">10.5281/zenodo.19720040</guid>
     </item>

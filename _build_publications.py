@@ -23,14 +23,14 @@ PAPERS = [
          links=[("arXiv", "https://arxiv.org/abs/2607.02830"), ("SSRN", "https://ssrn.com/abstract=6638259"), ("Zenodo", "https://doi.org/10.5281/zenodo.19720040"),
                 ("Companion data", "https://doi.org/10.5281/zenodo.19987695")]),
     dict(key="kamat2026red2400paper", title="RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels",
-         year="2026", note="Data paper. The dataset record carries a September 2026 correction notice; a corrected version of the paper is in preparation.", doi="10.5281/zenodo.20011630",
+         year="2026", note="Data paper. Dataset version 4.0 (September 2026) updates the documentation; a revised version of the paper is in preparation. See Version notes.", doi="10.5281/zenodo.20011630",
          links=[("arXiv", "https://arxiv.org/abs/2605.12151"), ("SSRN", "https://ssrn.com/abstract=6702198"), ("Zenodo", "https://doi.org/10.5281/zenodo.20011630"),
                 ("Dataset", "https://doi.org/10.5281/zenodo.19989074")]),
     dict(key="kamat2026redpump", title="Auditing Collector-Generated Graduation Labels on Pump.fun: Measurement Error and Temporal Non-Generalization",
-         year="2026", note="Working paper. The dataset record (version 1.6) carries a September 2026 correction notice; a corrected version is in preparation.", doi=None,
+         year="2026", note="Working paper. Dataset version 1.6 (September 2026) adds documentation notes; a revised version is in preparation. See Version notes.", doi=None,
          links=[("arXiv", "https://arxiv.org/abs/2607.02823"), ("SSRN", "https://ssrn.com/abstract=6915560"), ("Dataset", "https://doi.org/10.5281/zenodo.20633486")]),
     dict(key="kamat2026cohorts", title="Coordinated Sniper Cohorts on Pump.fun: Detection of 1,012 Persistent Wallet Rings and a Contamination-Adjusted Estimate of Coordination-Specific First-Hour Buyer-Flow Lift",
-         year="2026", note="Working paper. Title as posted on arXiv. Correction (October 2026, arXiv v4): the buyer records include sells and miss many buys, so all numerical results, including the count in the title, are withdrawn; no effect is claimed.", doi=None,
+         year="2026", note="Working paper, withdrawn by the author (October 2026, arXiv v4). Title as posted on arXiv. See Version notes.", doi=None,
          links=[("arXiv", "https://arxiv.org/abs/2607.02795"), ("Results and code record", "https://doi.org/10.5281/zenodo.20978741")]),
     dict(key="kamat2026crosspipeline", title="Do Two On-Chain Observation Pipelines See the Same Tokens? Cross-Pipeline Coverage on the Solana pump.fun Launchpad",
          year="2026", note="Working paper.", doi=None,
@@ -96,7 +96,7 @@ PREREGS = [
          note="Preregistration on OSF, registered 3 October 2026.", doi="10.17605/OSF.IO/7Q3YK",
          links=[("OSF registration", "https://osf.io/7q3yk/")]),
     dict(key="kamat2026hourawareprereg", title="Preregistration (re-registration): Hour-Aware Prospective Deployment Test on the Solana pump.fun Ecosystem, v2.2 redacted with v2.3 implementation amendment",
-         note="Preregistration on OSF, registered 5 October 2026. Replaces the withdrawn September 2026 registration.", doi="10.17605/OSF.IO/YVB3M",
+         note="Preregistration on OSF, registered 5 October 2026. Replaces the September 2026 registration.", doi="10.17605/OSF.IO/YVB3M",
          links=[("OSF registration", "https://osf.io/yvb3m/")]),
     dict(key="kamat2026paidpromotion", title="Paying for attention: is paid token promotion a costly signal of quality or a prelude to abandonment? A preregistered test of the 7-day survival of newly promoted Solana tokens on a public DEX screener",
          note="Preregistration on OSF, registered 7 October 2026.", doi="10.17605/OSF.IO/W47YK",
@@ -167,7 +167,7 @@ summary {{ cursor:pointer; color:var(--accent); font-size:15px; margin-top:6px; 
 </style>
 </head>
 <body><main>
-<p><a href="index.html">← Home</a></p>
+<p><a href="index.html">← Home</a> · <a href="version-notes.html">Version notes</a></p>
 <h1>Publications, datasets and software</h1>
 <div class="sub">Arati Uday Kamat · Independent Researcher · <a href="{ORCID}">ORCID 0009-0000-4781-312X</a> · <a href="https://scholar.google.com/citations?user=CWpdnloAAAAJ">Google Scholar</a> · <a href="https://github.com/aartikamat">GitHub</a> · <a href="https://huggingface.co/AratiKamat">Hugging Face</a> · <a href="https://www.kaggle.com/aratiudaykamat">Kaggle</a></div>
 <p>All datasets are released under CC BY 4.0. Please cite the DOI shown for each item; each "Cite" button gives a ready-to-paste BibTeX entry.</p>
