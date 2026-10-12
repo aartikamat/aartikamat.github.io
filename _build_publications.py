@@ -23,14 +23,14 @@ PAPERS = [
          links=[("arXiv", "https://arxiv.org/abs/2607.02830"), ("SSRN", "https://ssrn.com/abstract=6638259"), ("Zenodo", "https://doi.org/10.5281/zenodo.19720040"),
                 ("Companion data", "https://doi.org/10.5281/zenodo.19987695")]),
     dict(key="kamat2026red2400paper", title="RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels",
-         year="2026", note="Data paper. Dataset version 4.0 (September 2026) updates the documentation; a revised version of the paper is in preparation. See Version notes.", doi="10.5281/zenodo.20011630",
+         year="2026", note="Data paper. Dataset version 4.0 (September 2026) updates the documentation; arXiv version 3 (8 October 2026) carries a correction notice; a fully revised version is in preparation. See Version notes.", doi="10.5281/zenodo.20011630",
          links=[("arXiv", "https://arxiv.org/abs/2605.12151"), ("SSRN", "https://ssrn.com/abstract=6702198"), ("Zenodo", "https://doi.org/10.5281/zenodo.20011630"),
                 ("Dataset", "https://doi.org/10.5281/zenodo.19989074")]),
     dict(key="kamat2026redpump", title="Auditing Collector-Generated Graduation Labels on Pump.fun: Measurement Error and Temporal Non-Generalization",
          year="2026", note="Working paper. Dataset version 1.6 (September 2026) adds documentation notes; a revised version is in preparation. See Version notes.", doi=None,
          links=[("arXiv", "https://arxiv.org/abs/2607.02823"), ("SSRN", "https://ssrn.com/abstract=6915560"), ("Dataset", "https://doi.org/10.5281/zenodo.20633486")]),
     dict(key="kamat2026cohorts", title="Coordinated Sniper Cohorts on Pump.fun: Detection of 1,012 Persistent Wallet Rings and a Contamination-Adjusted Estimate of Coordination-Specific First-Hour Buyer-Flow Lift",
-         year="2026", note="Working paper, withdrawn by the author (October 2026, arXiv v4). Title as posted on arXiv. See Version notes.", doi=None,
+         year="2026", note="Working paper, withdrawn by the author (October 2026, arXiv v4). Title as posted on arXiv. See Version notes.", doi=None, withdrawn=True,
          links=[("arXiv", "https://arxiv.org/abs/2607.02795"), ("Results and code record", "https://doi.org/10.5281/zenodo.20978741")]),
     dict(key="kamat2026crosspipeline", title="Do Two On-Chain Observation Pipelines See the Same Tokens? Cross-Pipeline Coverage on the Solana pump.fun Launchpad",
          year="2026", note="Working paper.", doi=None,
@@ -59,7 +59,8 @@ DATASETS = [
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21211414")]),
     dict(key="kamat2026redbridge", title="RED-BRIDGE-2026: Wormhole cross-chain messages", doi="10.5281/zenodo.21211497",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21211497")]),
-    dict(key="kamat2026redrejectdata", title="RED-REJECT-2026-v2: A 96-Day Public Corpus of Algorithmic Filter Rejections (v2.3)", doi="10.5281/zenodo.21402476",
+    dict(key="kamat2026redrejectdata", title="RED-REJECT-2026-v2: A 96-Day Public Corpus of Algorithmic Filter Rejections with Post-Rejection Follow-up Samples on the Solana pump.fun Ecosystem", doi="10.5281/zenodo.21402476",
+         note="Current release v2.3.",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21402476")]),
     dict(key="kamat2026prfsdata", title="Post-Rejection Follow-up Sampling: Dataset", doi="10.5281/zenodo.20043515",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.20043515")]),
@@ -76,6 +77,7 @@ SOFTWARE = [
          note="The Zenodo record archives v1.0.0, which pooled outcomes by token; its per-filter tables should not be cited as per-event results. The current release on GitHub is v2.0.2.",
          links=[("GitHub", GH + "red2400-replication-toolkit"), ("Zenodo", "https://doi.org/10.5281/zenodo.20561397")]),
     dict(key="kamat2026reader", title="red-2400-reader: a lightweight loader for the RED-2400 files", doi=None,
+         note="Version 0.1.0 (May 2026) reads the JSON-lines outcomes file; the CSV files of the current RED-2400 deposit load directly with pandas.",
          links=[("GitHub", GH + "red-2400-reader")]),
 ]
 
@@ -132,9 +134,11 @@ def card(item, kind):
     links = " · ".join(f'<a href="{html.escape(u)}">{html.escape(n)}</a>' for n, u in item["links"])
     note = f'<div class="note">{html.escape(item["note"])}</div>' if item.get("note") else ""
     doi = f' · DOI <a href="https://doi.org/{item["doi"]}">{item["doi"]}</a>' if item.get("doi") else ""
+    # No "Cite" box for withdrawn work: it should not invite citation.
+    cite = "" if item.get("withdrawn") else f'<details><summary>Cite (BibTeX)</summary><pre>{html.escape(bib(item, kind))}</pre></details>'
     return (f'<div class="item"><div class="t">{html.escape(item["title"])}</div>'
             f'<div class="m">A. U. Kamat · 2026{doi}</div>{note}<div class="l">{links}</div>'
-            f'<details><summary>Cite (BibTeX)</summary><pre>{html.escape(bib(item, kind))}</pre></details></div>')
+            f'{cite}</div>')
 
 
 ld = [{"@context": "https://schema.org", "@type": "Dataset", "name": d["title"], "identifier": f"https://doi.org/{d['doi']}",
@@ -183,7 +187,7 @@ summary {{ cursor:pointer; color:var(--accent); font-size:15px; margin-top:6px; 
 <h2>Open peer reviews</h2>
 <p>Public peer reviews with DOIs. A seventh public review (ResearchHub) and two reviews invited by journal editors are listed on the <a href="index.html">home page</a>.</p>
 {''.join(f'<div class="item"><div class="t">{html.escape(t)}</div><div class="l"><a href="https://doi.org/{d}">doi:{d}</a></div></div>' for t, d in REVIEWS)}
-<p class="sub">Last updated 7 October 2026.</p>
+<p class="sub">Last updated 12 October 2026.</p>
 </main></body></html>
 """
 open("publications.html", "w", encoding="utf-8").write(page)
