@@ -39,7 +39,7 @@ PAPERS = [
          year="2026", note="Data paper.", doi="10.5281/zenodo.21402476",
          links=[("SSRN", "https://ssrn.com/abstract=7129798"), ("Dataset", "https://doi.org/10.5281/zenodo.21402476")]),
     dict(key="kamat2026corpus", title="A Multi-Venue Solana/DeFi Microstructure Data Corpus: The RED-2400 Family v2",
-         year="2026", note="Working paper. Each companion dataset's version 1.1 (28 September 2026) updates its documentation; the data files are unchanged. Please read the SSRN version (revised 29 September 2026).", doi=None,
+         year="2026", note="Working paper. Each companion dataset's version 1.1 (28 September 2026) updates its documentation; the data files are unchanged. Please read the SSRN version (revised 29 September 2026), which supersedes the earlier text at arXiv:2610.00005 (version 1).", doi=None,
          links=[("SSRN", "https://ssrn.com/abstract=7062579")]),
 ]
 

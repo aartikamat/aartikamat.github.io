@@ -5,7 +5,7 @@
     <link>https://aartikamat.github.io</link>
     <description>Working papers and preprints by Arati Uday Kamat.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment</title>
       <link>https://arxiv.org/abs/2606.08232</link>
@@ -16,14 +16,14 @@
     <item>
       <title>Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading</title>
       <link>https://arxiv.org/abs/2606.08228</link>
-      <description>A method for recording what rejected tokens do after a trading filter rejects them. Version note: the deployed tracker sampled every 10 minutes and kept one record per token; a revised version describes this. The method is unchanged.</description>
+      <description>A method for recording what rejected tokens do after a trading filter rejects them. Version note: the deployed tracker sampled every 10 minutes and kept one open record per token at a time; a revised version describing this has been submitted to arXiv (October 2026). The method is unchanged.</description>
       <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
       
     </item>
     <item>
       <title>Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</title>
       <link>https://ssrn.com/abstract=6638259</link>
-      <description>Audits how many losing trades each filter avoided against how many winning trades it blocked. Version note: a revised analysis against a fair-game benchmark replaces the headline ratio of the posted versions.</description>
+      <description>Counts rejected events whose tracked price later halved (saves) or doubled (misses) within 24 hours; the save-to-miss ratio is descriptive. Version note: a revised analysis against a fair-game benchmark replaces the headline ratio of the posted versions.</description>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">10.5281/zenodo.19720040</guid>
     </item>
