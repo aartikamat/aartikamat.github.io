@@ -15,36 +15,30 @@ PAPERS = [
          links=[("arXiv", "https://arxiv.org/abs/2606.08232"), ("SSRN", "https://ssrn.com/abstract=6564803"), ("Zenodo", "https://doi.org/10.5281/zenodo.19670718"),
                 ("Companion data", "https://doi.org/10.5281/zenodo.20043301"), ("Pre-registration", "https://doi.org/10.17605/OSF.IO/YVB3M")]),
     dict(key="kamat2026prfs", title="Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading",
-         year="2026", note="Working paper.", doi="10.5281/zenodo.19671656",
-         links=[("arXiv", "https://arxiv.org/abs/2606.08228"), ("SSRN", "https://ssrn.com/abstract=6607301"), ("Zenodo", "https://doi.org/10.5281/zenodo.19671656"),
+         year="2026", note="Working paper.", doi="10.48550/arXiv.2606.08228",
+         links=[("arXiv", "https://arxiv.org/abs/2606.08228"),
                 ("Data", "https://doi.org/10.5281/zenodo.20043515"), ("Code (GitHub)", GH + "post-rejection-sampling")]),
     dict(key="kamat2026filterprecision", title="Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events",
          year="2026", note="Working paper.", doi="10.5281/zenodo.19720040",
          links=[("arXiv", "https://arxiv.org/abs/2607.02830"), ("SSRN", "https://ssrn.com/abstract=6638259"), ("Zenodo", "https://doi.org/10.5281/zenodo.19720040"),
                 ("Companion data", "https://doi.org/10.5281/zenodo.19987695")]),
     dict(key="kamat2026red2400paper", title="RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels",
-         year="2026", note="Data paper. Dataset version 4.0 (September 2026) updates the documentation; arXiv version 3 (8 October 2026) carries a correction notice; a fully revised version is in preparation. See Version notes.", doi="10.5281/zenodo.20011630",
+         year="2026", note="Data paper.", doi="10.5281/zenodo.20011630",
          links=[("arXiv", "https://arxiv.org/abs/2605.12151"), ("SSRN", "https://ssrn.com/abstract=6702198"), ("Zenodo", "https://doi.org/10.5281/zenodo.20011630"),
                 ("Dataset", "https://doi.org/10.5281/zenodo.19989074")]),
     dict(key="kamat2026redpump", title="Auditing Collector-Generated Graduation Labels on Pump.fun: Measurement Error and Temporal Non-Generalization",
-         year="2026", note="Working paper. Dataset version 1.6 (September 2026) adds documentation notes; a revised version is in preparation. See Version notes.", doi=None,
-         links=[("arXiv", "https://arxiv.org/abs/2607.02823"), ("SSRN", "https://ssrn.com/abstract=6915560"), ("Dataset", "https://doi.org/10.5281/zenodo.20633486")]),
-    dict(key="kamat2026cohorts", title="Coordinated Sniper Cohorts on Pump.fun: Detection of 1,012 Persistent Wallet Rings and a Contamination-Adjusted Estimate of Coordination-Specific First-Hour Buyer-Flow Lift",
-         year="2026", note="Working paper, withdrawn by the author (October 2026, arXiv v4). Title as posted on arXiv. See Version notes.", doi=None, withdrawn=True,
-         links=[("arXiv", "https://arxiv.org/abs/2607.02795"), ("Results and code record", "https://doi.org/10.5281/zenodo.20978741")]),
+         year="2026", note="Working paper.", doi=None,
+         links=[("arXiv", "https://arxiv.org/abs/2607.02823"), ("Dataset", "https://doi.org/10.5281/zenodo.20633486")]),
     dict(key="kamat2026crosspipeline", title="Do Two On-Chain Observation Pipelines See the Same Tokens? Cross-Pipeline Coverage on the Solana pump.fun Launchpad",
          year="2026", note="Working paper.", doi=None,
-         links=[("arXiv", "https://arxiv.org/abs/2609.18975"), ("SSRN", "https://ssrn.com/abstract=7128818"), ("Reproducibility package", "https://doi.org/10.5281/zenodo.21399918")]),
-    dict(key="kamat2026redreject", title="RED-REJECT-2026: A 96-Day Public Corpus of Algorithmic Filter Rejections with Post-Rejection Follow-up Samples",
-         year="2026", note="Data paper.", doi="10.5281/zenodo.21402476",
-         links=[("SSRN", "https://ssrn.com/abstract=7129798"), ("Dataset", "https://doi.org/10.5281/zenodo.21402476")]),
-    dict(key="kamat2026corpus", title="A Multi-Venue Solana/DeFi Microstructure Data Corpus: The RED-2400 Family v2",
-         year="2026", note="Working paper. Each companion dataset's version 1.1 (28 September 2026) updates its documentation; the data files are unchanged. Please read the SSRN version (revised 29 September 2026), which supersedes the earlier text at arXiv:2610.00005 (version 1).", doi=None,
+         links=[("arXiv", "https://arxiv.org/abs/2609.18975"), ("Reproducibility package", "https://doi.org/10.5281/zenodo.21399918")]),
+    dict(key="kamat2026corpus", title="Measurement artefacts in public crypto market data: A concurrent audit of oracle, exchange, lending, derivatives and bridge feeds",
+         year="2026", note="Working paper.", doi=None,
          links=[("SSRN", "https://ssrn.com/abstract=7062579")]),
 ]
 
 DATASETS = [
-    dict(key="kamat2026redpumpdata", title="RED-PUMP-2026-v1: a public benchmark of 860,213 pump.fun token launches with collector-generated terminal labels", doi="10.5281/zenodo.20633486",
+    dict(key="kamat2026redpumpdata", title="RED-PUMP-2026-v1: A public benchmark of 860,213 pump.fun token launches with collector-generated terminal labels (May–June 2026 regime)", doi="10.5281/zenodo.20633486",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.20633486"), ("Hugging Face", HF + "red-pump-2026"), ("Kaggle", KG + "red-pump-2026-pumpfun-token-launches")]),
     dict(key="kamat2026red2400data", title="RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels (dataset)", doi="10.5281/zenodo.19989074",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.19989074"), ("Hugging Face", HF + "RED-2400"), ("Kaggle", KG + "red-2400-data-rejected-trading-events-solana"),
@@ -65,7 +59,6 @@ DATASETS = [
     dict(key="kamat2026prfsdata", title="Post-Rejection Follow-up Sampling: Dataset", doi="10.5281/zenodo.20043515",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.20043515")]),
     dict(key="kamat2026ablation", title="REJECTION-ABLATION-2026-v1: A Post-Rejection Follow-up Sampling (PRFS) Corpus and Per-Filter Counterfactual Ablation for Solana Memecoin Trading (June 2026)", doi="10.5281/zenodo.21149175",
-         note="The per-filter summaries in this July 2026 deposit are superseded; a revised event-level analysis is in preparation.",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21149175")]),
 ]
 
@@ -74,7 +67,7 @@ SOFTWARE = [
          note="The Zenodo record archives v1.0.0; the current source on GitHub is version 2.0.0.",
          links=[("GitHub", GH + "post-rejection-sampling"), ("Zenodo", "https://doi.org/10.5281/zenodo.19672363")]),
     dict(key="kamat2026toolkit", title="RED-2400 Replication Toolkit", doi="10.5281/zenodo.20561397",
-         note="The Zenodo record archives v1.0.0, which pooled outcomes by token; its per-filter tables should not be cited as per-event results. The current release on GitHub is v2.0.2.",
+         note="The Zenodo record archives v1.0.0; the current release on GitHub is v2.0.2.",
          links=[("GitHub", GH + "red2400-replication-toolkit"), ("Zenodo", "https://doi.org/10.5281/zenodo.20561397")]),
     dict(key="kamat2026reader", title="red-2400-reader: a lightweight loader for the RED-2400 files", doi=None,
          note="Version 0.1.0 (May 2026) reads the JSON-lines outcomes file; the CSV files of the current RED-2400 deposit load directly with pandas.",
@@ -98,7 +91,7 @@ PREREGS = [
          note="Preregistration on OSF, registered 3 October 2026.", doi="10.17605/OSF.IO/7Q3YK",
          links=[("OSF registration", "https://osf.io/7q3yk/")]),
     dict(key="kamat2026hourawareprereg", title="Preregistration (re-registration): Hour-Aware Prospective Deployment Test on the Solana pump.fun Ecosystem, v2.2 redacted with v2.3 implementation amendment",
-         note="Preregistration on OSF, registered 5 October 2026. Replaces the September 2026 registration.", doi="10.17605/OSF.IO/YVB3M",
+         note="Preregistration on OSF, registered 5 October 2026.", doi="10.17605/OSF.IO/YVB3M",
          links=[("OSF registration", "https://osf.io/yvb3m/")]),
     dict(key="kamat2026paidpromotion", title="Paying for attention: is paid token promotion a costly signal of quality or a prelude to abandonment? A preregistered test of the 7-day survival of newly promoted Solana tokens on a public DEX screener",
          note="Preregistration on OSF, registered 7 October 2026.", doi="10.17605/OSF.IO/W47YK",
@@ -134,8 +127,7 @@ def card(item, kind):
     links = " · ".join(f'<a href="{html.escape(u)}">{html.escape(n)}</a>' for n, u in item["links"])
     note = f'<div class="note">{html.escape(item["note"])}</div>' if item.get("note") else ""
     doi = f' · DOI <a href="https://doi.org/{item["doi"]}">{item["doi"]}</a>' if item.get("doi") else ""
-    # No "Cite" box for withdrawn work: it should not invite citation.
-    cite = "" if item.get("withdrawn") else f'<details><summary>Cite (BibTeX)</summary><pre>{html.escape(bib(item, kind))}</pre></details>'
+    cite = f'<details><summary>Cite (BibTeX)</summary><pre>{html.escape(bib(item, kind))}</pre></details>'
     return (f'<div class="item"><div class="t">{html.escape(item["title"])}</div>'
             f'<div class="m">A. U. Kamat · 2026{doi}</div>{note}<div class="l">{links}</div>'
             f'{cite}</div>')
@@ -171,7 +163,7 @@ summary {{ cursor:pointer; color:var(--accent); font-size:15px; margin-top:6px; 
 </style>
 </head>
 <body><main>
-<p><a href="index.html">← Home</a> · <a href="version-notes.html">Version notes</a></p>
+<p><a href="index.html">← Home</a></p>
 <h1>Publications, datasets and software</h1>
 <div class="sub">Arati Uday Kamat · Independent Researcher · <a href="{ORCID}">ORCID 0009-0000-4781-312X</a> · <a href="https://scholar.google.com/citations?user=CWpdnloAAAAJ">Google Scholar</a> · <a href="https://github.com/aartikamat">GitHub</a> · <a href="https://huggingface.co/AratiKamat">Hugging Face</a> · <a href="https://www.kaggle.com/aratiudaykamat">Kaggle</a></div>
 <p>All datasets are released under CC BY 4.0. Please cite the DOI shown for each item; each "Cite" button gives a ready-to-paste BibTeX entry.</p>
@@ -187,7 +179,7 @@ summary {{ cursor:pointer; color:var(--accent); font-size:15px; margin-top:6px; 
 <h2>Open peer reviews</h2>
 <p>Public peer reviews with DOIs. A seventh public review (ResearchHub) and two reviews invited by journal editors are listed on the <a href="index.html">home page</a>.</p>
 {''.join(f'<div class="item"><div class="t">{html.escape(t)}</div><div class="l"><a href="https://doi.org/{d}">doi:{d}</a></div></div>' for t, d in REVIEWS)}
-<p class="sub">Last updated 12 October 2026.</p>
+<p class="sub">Last updated 13 October 2026.</p>
 </main></body></html>
 """
 open("publications.html", "w", encoding="utf-8").write(page)

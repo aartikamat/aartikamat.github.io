@@ -102,9 +102,9 @@
     "datePublished": "2026-06-09",
     "description": "Introduces Post-Rejection Follow-up Sampling (PRFS), an observational methodology in which a separate tracking process samples the price and liquidity of each rejected token from the same live data path used by the rejecting system. The reported estimand is the observed post-rejection forward return; no causal claim about a hypothetical accepted trade is made.",
     "keywords": "post-rejection follow-up sampling, observational measurement, algorithmic DEX trading, filter evaluation, coverage, market microstructure",
-    "identifier": ["https://arxiv.org/abs/2606.08228", "https://ssrn.com/abstract=6607301", "https://doi.org/10.5281/zenodo.19671656", "https://doi.org/10.5281/zenodo.20043515"],
+    "identifier": ["https://arxiv.org/abs/2606.08228", "https://doi.org/10.5281/zenodo.20043515"],
     "url": "https://arxiv.org/abs/2606.08228",
-    "sameAs": ["https://arxiv.org/abs/2606.08228", "https://ssrn.com/abstract=6607301", "https://doi.org/10.5281/zenodo.19671656", "https://doi.org/10.5281/zenodo.20043515", "https://github.com/aartikamat/post-rejection-sampling"]
+    "sameAs": ["https://arxiv.org/abs/2606.08228", "https://doi.org/10.5281/zenodo.20043515", "https://github.com/aartikamat/post-rejection-sampling"]
   }
   </script>
 
@@ -113,7 +113,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     "name": "RED-2400 Replication Toolkit",
-    "description": "Python toolkit for reproducible filter-precision auditing of the RED-2400 public benchmark. Current release v2.0.2 attaches outcomes per rejection event; per-filter tables from v1.0.0 pooled outcomes by token and should not be cited as event-level results.",
+    "description": "Python toolkit for reproducible filter-precision auditing of the RED-2400 public benchmark. Current release v2.0.2 attaches outcomes to each rejection event.",
     "softwareVersion": "2.0.2",
     "codeRepository": "https://github.com/aartikamat/red2400-replication-toolkit",
     "author": {"@type": "Person", "name": "Kamat, Arati Uday", "identifier": "https://orcid.org/0009-0000-4781-312X"},
@@ -161,40 +161,35 @@
       <p class="tagline" style="margin-top: 0.9rem; font-size: 0.92rem; line-height: 1.6;"><strong>Research focus.</strong> Automated rules that reject credit applications, payments, flagged transactions or trades are hard to evaluate, because outcomes for rejected cases are often missing or incompletely recorded (in credit scoring this is studied as reject inference). Public crypto markets offer a useful setting for studying part of this problem: a rejection can be recorded with the rule that fired, and the asset's later market path observed without executing a trade. Post-Rejection Follow-up Sampling (PRFS) is a documented follow-up procedure for doing this; it draws on sixteen years of banking reconciliation and controls work. Limits: a rejected token's later price is not the return an executed trade would have earned, and it says nothing about how a rejected borrower would have repaid.</p>
     </header>
 
-    <p class="pubs-link"><a href="publications.html"><strong>All publications, datasets and software, with copy-ready citations →</strong></a><br><a href="version-notes.html">Version notes: how each work has been updated →</a></p>
+    <p class="pubs-link"><a href="publications.html"><strong>All publications, datasets and software, with copy-ready citations →</strong></a></p>
     <h2>Working papers</h2>
 
     <article class="paper">
       <h3 class="paper-title">Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2606.08228</code> (v2, 2026-09-17) · SSRN abstract 6607301 · Manuscript concept DOI <code>10.5281/zenodo.19671656</code> · Dataset concept DOI <code>10.5281/zenodo.20043515</code> · Earlier versions (SSRN, Zenodo) were titled "A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading"</p>
-      <p class="paper-abstract">Introduces Post-Rejection Follow-up Sampling (PRFS), an observational methodology in which a separate tracking process samples the price and liquidity of each rejected token from the same live data path used by the rejecting system. The companion dataset contains 67,000 follow-up rows across 2,997 rejection events and 457 unique Solana token mints. The reported estimand is the observed post-rejection forward return; no causal claim about a hypothetical accepted trade is made.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> the deployed tracker sampled each tracked token every 10 minutes and kept one open record per token at a time; a revised version describing this has been submitted to arXiv (October 2026). The method itself is unchanged. <a href="version-notes.html#prfs">Details</a></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2606.08228</code> · Dataset concept DOI <code>10.5281/zenodo.20043515</code></p>
+      <p class="paper-abstract">Introduces Post-Rejection Follow-up Sampling (PRFS), an observational methodology in which a separate tracking process samples the price and liquidity of each rejected token from the same live data path used by the rejecting system. The companion dataset contains 67,000 follow-up rows across 2,997 rejection events and 457 unique Solana token mints; in these data the deployed tracker sampled each tracked token every 10 minutes and kept one open record per token at a time. The reported estimand is the observed post-rejection forward return; no causal claim about a hypothetical accepted trade is made.</p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2606.08228">arXiv ↗</a>
-        <a href="http://ssrn.com/abstract=6607301">SSRN ↗</a>
-        <a href="https://doi.org/10.5281/zenodo.19671656">Manuscript concept DOI ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20043515">Dataset concept DOI ↗</a>
         <a href="https://github.com/aartikamat/post-rejection-sampling">Code (GitHub) ↗</a>
       </p>
     </article>
     <article class="paper">
       <h3 class="paper-title">Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2606.08232</code> · SSRN abstract 6564803 · Manuscript concept DOI <code>10.5281/zenodo.19670718</code> · Dataset concept DOI <code>10.5281/zenodo.20043301</code> · Earlier versions were titled "A Multi-Layer Intelligence Framework"</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2606.08232</code> · SSRN abstract 6564803 · Manuscript concept DOI <code>10.5281/zenodo.19670718</code> · Dataset concept DOI <code>10.5281/zenodo.20043301</code></p>
       <p class="paper-abstract">Reports a 15-day paper-traded deployment of an autonomous memecoin trading system on Solana decentralised exchanges (190 trades, 29 March to 12 April 2026). A test of three exploratorily selected weak entry hours against all other hours is directional and not confirmatory (Mann-Whitney p = 0.56), and removing the top three trades (1.6 percent of the sample) makes the cumulative return unprofitable. The contribution is measurement infrastructure, a deposited assertion-based reproduction script, and three design lessons for small-sample trading studies.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> the hour-of-day pattern is exploratory and not confirmatory (Mann-Whitney p = 0.56 for three hours chosen on this sample; the mean return across all 190 trades is +0.62 percent per trade). Earlier versions stated it more strongly. A preregistered prospective study of the system's filters is under way. <a href="version-notes.html#houraware">Details</a></p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2606.08232">arXiv ↗</a>
         <a href="http://ssrn.com/abstract=6564803">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.19670718">Manuscript concept DOI ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20043301">Dataset concept DOI ↗</a>
-        <a href="https://doi.org/10.17605/OSF.IO/YVB3M">Prospective re-test: OSF preregistration ↗</a>
+        <a href="https://doi.org/10.17605/OSF.IO/YVB3M">Prospective study: OSF preregistration ↗</a>
       </p>
     </article>
     <article class="paper">
       <h3 class="paper-title">Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02830</code> · SSRN abstract 6638259 · Manuscript concept DOI <code>10.5281/zenodo.19720040</code> · Dataset concept DOI <code>10.5281/zenodo.19987695</code> · Revised analysis in preparation</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02830</code> · SSRN abstract 6638259 · Manuscript concept DOI <code>10.5281/zenodo.19720040</code> · Dataset concept DOI <code>10.5281/zenodo.19987695</code></p>
       <p class="paper-abstract">Audits eight filter rules in a DEX trading system's filter stack, using about 2,400 rejection events from a two-week window in April 2026. It counts rejected events whose tracked price later fell to half or less of its first tracked value within 24 hours ("saves") or rose to double or more ("misses"); the save-to-miss ratio is descriptive and not by itself evidence of filter skill.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> a revised analysis, which compares each filter with a fair-game benchmark, replaces the headline ratio of the posted versions. <a href="version-notes.html#filter-precision">Details</a></p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2607.02830">arXiv ↗</a>
         <a href="https://ssrn.com/abstract=6638259">SSRN ↗</a>
@@ -206,7 +201,6 @@
       <h3 class="paper-title">RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels</h3>
       <p class="paper-meta">Kamat, A. U. (2026) · arXiv <code>2605.12151</code> [q-fin.TR] · SSRN abstract 6702198 · Multi-platform deposit: Zenodo + Kaggle + IEEE DataPort</p>
       <p class="paper-abstract">Public benchmark dataset of algorithmically rejected DEX trading events from a live Solana filter stack: 6,660 rejection events, 169,123 forward-outcome observations and 1,837 lifecycle-tracker snapshots over the window 2026-04-10 to 2026-05-02 UTC. Event-level outcome linkage is available for about half of the events (3,333 of 6,660 exact matches); mint-level coverage is near-complete (1,075 of 1,076 mints). CC-BY-4.0 licensed. Deposited across six platforms (arXiv, SSRN, Zenodo, Kaggle, IEEE DataPort, Hugging Face). RED-2400 is a dataset name, not a count, and is the first window in a planned dataset series.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> dataset version 4.0 (September 2026) updates the documentation; the data files are unchanged, and Section V of the preprint is superseded. <a href="version-notes.html#red2400">Details</a></p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2605.12151">arXiv ↗</a>
         <a href="https://ssrn.com/abstract=6702198">SSRN ↗</a>
@@ -219,29 +213,25 @@
     </article>
     <article class="paper">
       <h3 class="paper-title">Auditing Collector-Generated Graduation Labels on Pump.fun: Measurement Error and Temporal Non-Generalization</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02823</code> (v4, 2026-09-10) · SSRN abstract 6915560 (earlier version) · Dataset concept DOI <code>10.5281/zenodo.20633486</code> (always resolves to the latest version, currently v1.6 at <code>10.5281/zenodo.23018519</code>) · Companion dataset RED-PUMP-2026-v1 · Earlier versions were titled "Pump.fun Graduation Regime Windows"</p>
-      <p class="paper-abstract">Audit, under a pre-specified analysis protocol, of the graduation labels written by an off-chain data collector for 749,816 pump.fun token launches (12 May to 10 June 2026). The recorded label is the collector's own classification of what it saw while polling a top-50 feed, not the platform's graduation event, and its "timeout" label does not establish non-graduation. A locked logistic association model discriminates well in the 15-day development period (AUROC 0.859) but does not generalise to the following 14 days (AUROC 0.464; 95 percent interval 0.411 to 0.520, which includes 0.5). The negative result is reported as specified, with a reproducible correction history.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> arXiv version 4 (September 2026) replaces the survival estimates of earlier versions (arXiv v1 to v3 and the SSRN posting), and dataset version 1.6 adds documentation notes. <a href="version-notes.html#graduation">Details</a></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:<code>2607.02823</code> · Companion dataset RED-PUMP-2026-v1 · Dataset concept DOI <code>10.5281/zenodo.20633486</code> (always resolves to the latest version, currently v1.6 at <code>10.5281/zenodo.23018519</code>)</p>
+      <p class="paper-abstract">Audit, under a pre-specified analysis protocol, of the graduation labels written by an off-chain data collector for 749,816 pump.fun token launches (12 May to 10 June 2026). The recorded label is the collector's own classification of what it saw while polling a top-50 feed, not the platform's graduation event, and its "timeout" label does not establish non-graduation. A locked logistic association model discriminates well in the 15-day development period (AUROC 0.859) but does not generalise to the following 14 days (AUROC 0.464; 95 percent interval 0.411 to 0.520, which includes 0.5). The dataset's documentation notes that this failure mainly reflects a calendar-spline term in the frozen model rather than evidence that the market changed, and that the last day of the validation cohort is outcome-selected.</p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2607.02823">arXiv ↗</a>
-        <a href="https://ssrn.com/abstract=6915560">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.20633486">Zenodo dataset concept DOI ↗</a>
       </p>
     </article>
     <article class="paper">
       <h3 class="paper-title">Counterfactual Rejection Filter Ablation: An Empirical Application of Post-Rejection Follow-up Sampling to Solana Memecoin Trading</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · Dataset concept DOI <code>10.5281/zenodo.21149175</code> (REJECTION-ABLATION-2026-v1) · Collected by the production rejection tracker that also produced the PRFS example data, not under the PRFS schedule · Revised analysis in preparation</p>
-      <p class="paper-abstract">Records the later prices of tokens rejected by the eight filters of a paper-trading system on the Solana pump.fun marketplace (June 2026) and compares per-filter outcomes under different measurement choices. The deposited corpus contains 496,848 post-rejection price samples across 3,125 rejected tokens.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> the per-filter summaries in the July 2026 deposit are superseded; a revised analysis at the level of individual rejection events is in preparation. <a href="version-notes.html#ablation">Details</a></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · Dataset concept DOI <code>10.5281/zenodo.21149175</code> (REJECTION-ABLATION-2026-v1) · Collected by the production rejection tracker that also produced the PRFS example data, not under the PRFS schedule · Event-level analysis in preparation</p>
+      <p class="paper-abstract">Records the later prices of tokens rejected by the eight filters of a paper-trading system on the Solana pump.fun marketplace (June 2026). The deposited corpus contains 496,848 post-rejection price samples across 3,125 rejected tokens.</p>
       <p class="paper-links">
         <a href="https://doi.org/10.5281/zenodo.21149175">Zenodo dataset concept DOI ↗</a>
       </p>
     </article>
     <article class="paper">
-      <h3 class="paper-title">A Multi-Venue Solana/DeFi Microstructure Data Corpus: The RED-2400 Family v2</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7062579 (revised 29 September 2026) · Corpus dataset paper covering five deposited datasets: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
-      <p class="paper-abstract">Corpus-level dataset paper describing the RED-2400 family v2 of Solana / DeFi microstructure benchmarks. Five deposited datasets on Zenodo under CC-BY-4.0: RED-ORACLE-2026 (Pyth Network prices and publication lags for BTC, ETH and SOL with OKX benchmark prices), RED-ARB-2026 (328,186 rows of Jupiter sell quotes against OKX prices for six Solana tokens), RED-LIQ-2026 (Aave V3 Ethereum liquidations, 3,547 distinct events in 18,750 rows, plus a six-chain lending-utilization panel), RED-BASIS-2026 (OKX spot-perpetual basis and funding observations for BTC, ETH and SOL), RED-BRIDGE-2026 (360,714 Wormhole cross-chain messages). All five cover a common window of about 57 days (2026-05-08 to 2026-07-05). Standardized schema conventions, cross-dataset lineage, and reproducibility manifests for external researchers extending the methodology.</p>
-      <p class="paper-abstract"><strong>Version note:</strong> version 1.1 of each dataset (28 September 2026) updates the documentation; the data files are unchanged. The SSRN revision of 29 September 2026 supersedes the earlier text at arXiv:2610.00005 (version 1); please cite the SSRN version. <a href="version-notes.html#corpus">Details</a></p>
+      <h3 class="paper-title">Measurement artefacts in public crypto market data: A concurrent audit of oracle, exchange, lending, derivatives and bridge feeds</h3>
+      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7062579 · Five companion datasets on Zenodo: RED-ORACLE, RED-ARB, RED-LIQ, RED-BASIS, RED-BRIDGE</p>
+      <p class="paper-abstract">Asks how far descriptive regularities in data collected from public crypto market interfaces reflect the collection instrument rather than the market. It audits five concurrent feeds spanning 57 days in 2026 (Pyth oracle prices against an OKX benchmark, Solana decentralized-exchange quotes, Aave V3 liquidations and utilization, OKX basis and funding, and Wormhole bridge messages) and derives an audit protocol for data users. The five feeds are deposited as open datasets on Zenodo under CC-BY-4.0: RED-ORACLE-2026, RED-ARB-2026, RED-LIQ-2026, RED-BASIS-2026 and RED-BRIDGE-2026.</p>
       <p class="paper-links">
         <a href="https://ssrn.com/abstract=7062579">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21211109">RED-ORACLE Zenodo ↗</a>
@@ -253,27 +243,25 @@
     </article>
     <article class="paper">
       <h3 class="paper-title">Do Two On-Chain Observation Pipelines See the Same Tokens? Cross-Pipeline Coverage on the Solana pump.fun Launchpad</h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:2609.18975 · SSRN abstract 7128818 · Reproducibility package concept DOI <code>10.5281/zenodo.21399918</code></p>
+      <p class="paper-meta">Kamat, A. U. (2026) · arXiv:2609.18975 · Reproducibility package concept DOI <code>10.5281/zenodo.21399918</code></p>
       <p class="paper-abstract">Compares the output mint sets of two separately configured observation pipelines from one research programme on the Solana pump.fun launchpad: a cohort-detection pipeline and a rejection-filtering pipeline. In the June-July 2026 window, where the rejection stream covers the whole 17.5-day window, the cohort set contains 623 mints and the rejection set 1,742, with 5 overlapping mints (0.803% of cohort; 0.287% of rejection). In the earlier June window a collection gap leaves the rejection stream covering only 4.4% of the cohort window, so its overlap count is too small to be informative. Only raw counts, observed proportions and Jaccard/Dice indices are reported. The two pipelines' outputs were nearly disjoint, consistent with their different selection rules; the paper proposes reporting cross-collector overlap and collector coverage as a routine check.</p>
       <p class="paper-links">
         <a href="https://arxiv.org/abs/2609.18975">arXiv ↗</a>
-        <a href="https://ssrn.com/abstract=7128818">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21399918">Zenodo dataset concept DOI ↗</a>
       </p>
     </article>
     <article class="paper">
       <h3 class="paper-title">RED-REJECT-2026-v2: A 96-Day Public Corpus of Algorithmic Filter Rejections with Post-Rejection Follow-up Samples on the Solana pump.fun Ecosystem <span style="font-weight:normal;font-size:0.85em;">(current release v2.3)</span></h3>
-      <p class="paper-meta">Kamat, A. U. (2026) · SSRN abstract 7129798 · Dataset concept DOI <code>10.5281/zenodo.21402476</code> · 716,762 sample records across 4,635 unique SPL token addresses</p>
-      <p class="paper-abstract">Public benchmark corpus of algorithmic filter rejections with post-rejection follow-up samples on the Solana pump.fun ecosystem, 2026-04-11 to 2026-07-16. The 96-day window contains one collection gap (no new rejections from 3 June and no samples from 4 June until 24 June 2026), leaving about 75.6 days of sampling coverage. Corpus size: 716,762 sample records across 4,635 unique SPL token mint addresses and 18,237 distinct rejection events under eight named filter families (shares of sample rows: downtrend_24h 56.13 percent, marketcap_out_of_range 21.38 percent, multi_tf_fade 11.98 percent, timeSlot_not_strong 5.17 percent, hour_blacklist 2.36 percent, ultra_fast_reject_exit 1.64 percent, utc_hour_blocked 0.92 percent, h6_sellers_dominating 0.41 percent). Current version v2.3 corrects the documentation; the data files are unchanged.</p>
+      <p class="paper-meta">Kamat, A. U. (2026) · Dataset concept DOI <code>10.5281/zenodo.21402476</code> · 716,762 sample records across 4,635 unique SPL token addresses</p>
+      <p class="paper-abstract">Public benchmark corpus of algorithmic filter rejections with post-rejection follow-up samples on the Solana pump.fun ecosystem, 2026-04-11 to 2026-07-16. The 96-day window contains one collection gap (no new rejections from 3 June and no samples from 4 June until 24 June 2026), leaving about 75.6 days of sampling coverage. Corpus size: 716,762 sample records across 4,635 unique SPL token mint addresses and 18,237 distinct rejection events under eight named filter families (shares of sample rows: downtrend_24h 56.13 percent, marketcap_out_of_range 21.38 percent, multi_tf_fade 11.98 percent, timeSlot_not_strong 5.17 percent, hour_blacklist 2.36 percent, ultra_fast_reject_exit 1.64 percent, utc_hour_blocked 0.92 percent, h6_sellers_dominating 0.41 percent).</p>
       <p class="paper-links">
-        <a href="https://ssrn.com/abstract=7129798">SSRN ↗</a>
         <a href="https://doi.org/10.5281/zenodo.21402476">Zenodo dataset concept DOI ↗</a>
       </p>
     </article>
     <article class="paper">
       <h3 class="paper-title">RED-2400 Replication Toolkit: Event-Level Auditing of Algorithmic Trading Rejection Filters</h3>
       <p class="paper-meta">Kamat, A. U. (2026) · Current release v2.0.2 (GitHub, September 2026) · Software DOI <code>10.5281/zenodo.20561397</code> archives v1.0.0</p>
-      <p class="paper-abstract">Python toolkit accompanying RED-2400. Packages the filter-audit workflow as an installable library (source on GitHub; not published on PyPI). Release v2 attaches outcomes to each rejection event. Release v1.0.0, which pooled outcomes by token, is kept for reproducibility only (<a href="version-notes.html#toolkit">details</a>). License: MIT (toolkit) / CC-BY-4.0 (dataset).</p>
+      <p class="paper-abstract">Python toolkit accompanying RED-2400. Packages the filter-audit workflow as an installable library (source on GitHub; not published on PyPI). The current release (v2) attaches outcomes to each rejection event. License: MIT (toolkit) / CC-BY-4.0 (dataset).</p>
       <p class="paper-links">
         <a href="https://github.com/aartikamat/red2400-replication-toolkit">GitHub ↗</a>
       </p>
@@ -292,7 +280,7 @@
         <li><strong>Is US macro-announcement risk priced in 24/7 crypto options? Option-implied event variance from daily-expiry bitcoin and ether options: a preregistered event study</strong>  -  OSF <a href="https://osf.io/us2xq/" style="color: var(--accent);">osf.io/us2xq</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/US2XQ" style="color: var(--accent);">10.17605/OSF.IO/US2XQ</a> (registered 3 October 2026).</li>
         <li><strong>Scheduled macro news and forced deleveraging in 24/7 crypto perpetuals: a preregistered event study of exchange-wide liquidations around FOMC, CPI and payroll releases</strong>  -  OSF <a href="https://osf.io/qs7hm/" style="color: var(--accent);">osf.io/qs7hm</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/QS7HM" style="color: var(--accent);">10.17605/OSF.IO/QS7HM</a> (registered 3 October 2026).</li>
         <li><strong>A frozen forecast: do DeFi fixed rates predict realized yields? Implied fixed rates of Pendle principal tokens versus the realized yields of their underlying assets to maturity, a preregistered forecast test</strong>  -  OSF <a href="https://osf.io/7q3yk/" style="color: var(--accent);">osf.io/7q3yk</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/7Q3YK" style="color: var(--accent);">10.17605/OSF.IO/7Q3YK</a> (registered 3 October 2026).</li>
-        <li><strong>Preregistration (re-registration): Hour-Aware Prospective Deployment Test on the Solana pump.fun Ecosystem, v2.2 redacted with v2.3 implementation amendment</strong>  -  OSF <a href="https://osf.io/yvb3m/" style="color: var(--accent);">osf.io/yvb3m</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/YVB3M" style="color: var(--accent);">10.17605/OSF.IO/YVB3M</a> (registered 5 October 2026; replaces the September 2026 registration).</li>
+        <li><strong>Preregistration (re-registration): Hour-Aware Prospective Deployment Test on the Solana pump.fun Ecosystem, v2.2 redacted with v2.3 implementation amendment</strong>  -  OSF <a href="https://osf.io/yvb3m/" style="color: var(--accent);">osf.io/yvb3m</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/YVB3M" style="color: var(--accent);">10.17605/OSF.IO/YVB3M</a> (registered 5 October 2026).</li>
         <li><strong>Paying for attention: is paid token promotion a costly signal of quality or a prelude to abandonment? A preregistered test of the 7-day survival of newly promoted Solana tokens on a public DEX screener</strong>  -  OSF <a href="https://osf.io/w47yk/" style="color: var(--accent);">osf.io/w47yk</a>, DOI <a href="https://doi.org/10.17605/OSF.IO/W47YK" style="color: var(--accent);">10.17605/OSF.IO/W47YK</a> (registered 7 October 2026).</li>
       </ul>
     </div>
@@ -435,7 +423,7 @@
     <p>Academic correspondence: <code>arati.kamat@ieee.org</code>. Research collaboration inquiries welcome via my <a href="https://orcid.org/0009-0000-4781-312X" style="color: var(--accent);">ORCID profile</a>.</p>
 
     <footer>
-      <p>Last updated 2026-10-12</p>
+      <p>Last updated 2026-10-13</p>
     </footer>
   </div>
 </body>
