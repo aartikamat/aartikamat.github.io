@@ -1,5 +1,5 @@
 # Arati Uday Kamat
-> Independent researcher in financial-systems risk and controls: auditing financial data and automated financial decisions. Sixteen years in banking operations and controls at IDBI Bank, India; publicly released methods, datasets and preregistered studies. Full list: https://aartikamat.github.io/publications.html
+> Independent researcher in financial-systems risk and controls: auditing financial data and automated financial decisions. Nearly sixteen years in banking operations and controls at IDBI Bank, India; publicly released methods, datasets and preregistered studies. Full list: https://aartikamat.github.io/publications.html
 
 Landing: https://aartikamat.github.io
 ORCID: https://orcid.org/0009-0000-4781-312X
