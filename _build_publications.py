@@ -38,6 +38,10 @@ PAPERS = [
 ]
 
 DATASETS = [
+    dict(key="kamat2026rbipenalties", title="RBI monetary penalties on banks, 2023-2026: a coded dataset", doi="10.5281/zenodo.23681035",
+         links=[("Zenodo", "https://doi.org/10.5281/zenodo.23681035")]),
+    dict(key="kamat2026or1", title="OR1 operational-loss panel: banks' operational-risk losses from Basel Pillar 3 OR1 tables, 2016-2025", doi="10.5281/zenodo.23501675",
+         links=[("Zenodo", "https://doi.org/10.5281/zenodo.23501675")]),
     dict(key="kamat2026redpumpdata", title="RED-PUMP-2026-v1: A public benchmark of 860,213 pump.fun token launches with collector-generated terminal labels (May–June 2026 regime)", doi="10.5281/zenodo.20633486",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.20633486"), ("Hugging Face", HF + "red-pump-2026"), ("Kaggle", KG + "red-pump-2026-pumpfun-token-launches")]),
     dict(key="kamat2026red2400data", title="RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels (dataset)", doi="10.5281/zenodo.19989074",
@@ -54,7 +58,6 @@ DATASETS = [
     dict(key="kamat2026redbridge", title="RED-BRIDGE-2026: Wormhole cross-chain messages", doi="10.5281/zenodo.21211497",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21211497")]),
     dict(key="kamat2026redrejectdata", title="RED-REJECT-2026-v2: A 96-Day Public Corpus of Algorithmic Filter Rejections with Post-Rejection Follow-up Samples on the Solana pump.fun Ecosystem", doi="10.5281/zenodo.21402476",
-         note="Current release v2.3.",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.21402476")]),
     dict(key="kamat2026prfsdata", title="Post-Rejection Follow-up Sampling: Dataset", doi="10.5281/zenodo.20043515",
          links=[("Zenodo", "https://doi.org/10.5281/zenodo.20043515")]),
@@ -64,10 +67,8 @@ DATASETS = [
 
 SOFTWARE = [
     dict(key="kamat2026prfssoftware", title="Post-Rejection Follow-up Sampling (PRFS): Reference Implementation", doi="10.5281/zenodo.19672363",
-         note="The Zenodo record archives v1.0.0; the current source on GitHub is version 2.0.0.",
          links=[("GitHub", GH + "post-rejection-sampling"), ("Zenodo", "https://doi.org/10.5281/zenodo.19672363")]),
     dict(key="kamat2026toolkit", title="RED-2400 Replication Toolkit", doi="10.5281/zenodo.20561397",
-         note="The Zenodo record archives v1.0.0; the current release on GitHub is v2.0.2.",
          links=[("GitHub", GH + "red2400-replication-toolkit"), ("Zenodo", "https://doi.org/10.5281/zenodo.20561397")]),
     dict(key="kamat2026reader", title="red-2400-reader: a lightweight loader for the RED-2400 files", doi=None,
          note="Version 0.1.0 (May 2026) reads the JSON-lines outcomes file; the CSV files of the current RED-2400 deposit load directly with pandas.",
@@ -177,9 +178,9 @@ summary {{ cursor:pointer; color:var(--accent); font-size:15px; margin-top:6px; 
 <h2>Software</h2>
 {''.join(card(s, 'software') for s in SOFTWARE)}
 <h2>Open peer reviews</h2>
-<p>Public peer reviews with DOIs. A seventh public review (ResearchHub) and two reviews invited by journal editors are listed on the <a href="index.html">home page</a>.</p>
+<p>Public peer reviews with DOIs. A seventh public review (ResearchHub) and three reviews invited by journal editors are listed on the <a href="index.html">home page</a>.</p>
 {''.join(f'<div class="item"><div class="t">{html.escape(t)}</div><div class="l"><a href="https://doi.org/{d}">doi:{d}</a></div></div>' for t, d in REVIEWS)}
-<p class="sub">Last updated 13 October 2026.</p>
+<p class="sub">Last updated 28 October 2026.</p>
 </main></body></html>
 """
 open("publications.html", "w", encoding="utf-8").write(page)

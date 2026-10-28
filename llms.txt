@@ -13,3 +13,22 @@ ORCID: https://orcid.org/0009-0000-4781-312X
 
 - [Outcome-Classified Precision Auditing of Filter Rules in Algorithmic DEX Trading: Evidence from 2,400 Rejection Events](https://ssrn.com/abstract=6638259) · DOI: 10.5281/zenodo.19720040
   Counts rejected events whose tracked price later halved (saves) or doubled (misses) within 24 hours; the save-to-miss ratio is descriptive.
+
+- [RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels](https://arxiv.org/abs/2605.12151) · Dataset DOI: 10.5281/zenodo.19989074
+  Public benchmark dataset of algorithmically rejected DEX trading events on Solana: 6,660 rejection events, 169,123 forward-outcome observations and 1,837 lifecycle-tracker snapshots (10 April to 2 May 2026). RED-2400 is a dataset name, not a count.
+
+- [Auditing Collector-Generated Graduation Labels on Pump.fun: Measurement Error and Temporal Non-Generalization](https://arxiv.org/abs/2607.02823) · Dataset DOI: 10.5281/zenodo.20633486
+  Audit of the graduation labels written by an off-chain data collector for a frozen primary cohort of 749,816 unique pump.fun token mints (12 May to 10 June 2026); the recorded label is the collector's own classification, not the platform's graduation event.
+
+- [Measurement artefacts in public crypto market data: A concurrent audit of oracle, exchange, lending, derivatives and bridge feeds](https://ssrn.com/abstract=7062579)
+  Asks how far regularities in data collected from public crypto market interfaces reflect the collection instrument rather than the market; the five audited feeds are deposited as open datasets.
+
+- [Do Two On-Chain Observation Pipelines See the Same Tokens? Cross-Pipeline Coverage on the Solana pump.fun Launchpad](https://arxiv.org/abs/2609.18975) · DOI: 10.5281/zenodo.21399918
+  Compares the output mint sets of two separately configured observation pipelines and proposes reporting cross-collector overlap and collector coverage as a routine check.
+
+## Banking datasets
+- [RBI monetary penalties on banks, 2023-2026: a coded dataset](https://doi.org/10.5281/zenodo.23681035) · DOI: 10.5281/zenodo.23681035 · CC BY 4.0
+  The monetary penalties on banks that the Reserve Bank of India announced by press release from 2 January 2023 to 8 October 2026: 890 records, of which 885 are bank penalties on 699 banks, each coded for the control area that failed and for how it failed.
+
+- [OR1 operational-loss panel: banks' operational-risk losses from Basel Pillar 3 OR1 tables, 2016-2025](https://doi.org/10.5281/zenodo.23501675) · DOI: 10.5281/zenodo.23501675 · CC BY 4.0
+  Operational-risk losses of 39 banks as printed in their Basel Pillar 3 OR1 tables, 2016-2025, with the source page and file fingerprint for every value.

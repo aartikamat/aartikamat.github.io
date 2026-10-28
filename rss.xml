@@ -3,9 +3,9 @@
   <channel>
     <title>Arati Uday Kamat - Publications</title>
     <link>https://aartikamat.github.io</link>
-    <description>Working papers and preprints by Arati Uday Kamat.</description>
+    <description>Working papers, preprints and datasets by Arati Uday Kamat.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading on Solana DEXs: Evidence, Theory, and Design Lessons from a 15-Day Deployment</title>
       <link>https://arxiv.org/abs/2606.08232</link>
@@ -26,6 +26,20 @@
       <description>Counts rejected events whose tracked price later halved (saves) or doubled (misses) within 24 hours; the save-to-miss ratio is descriptive.</description>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">10.5281/zenodo.19720040</guid>
+    </item>
+    <item>
+      <title>OR1 operational-loss panel: banks' operational-risk losses from Basel Pillar 3 OR1 tables, 2016-2025</title>
+      <link>https://doi.org/10.5281/zenodo.23501675</link>
+      <description>Dataset (CC BY 4.0). Operational-risk losses of 39 banks as printed in their Basel Pillar 3 OR1 tables, 2016-2025, with the source page and file fingerprint for every value.</description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">10.5281/zenodo.23501675</guid>
+    </item>
+    <item>
+      <title>RBI monetary penalties on banks, 2023-2026: a coded dataset</title>
+      <link>https://doi.org/10.5281/zenodo.23681035</link>
+      <description>Dataset (CC BY 4.0). The monetary penalties on banks that the Reserve Bank of India announced by press release from 2 January 2023 to 8 October 2026: 890 records, of which 885 are bank penalties on 699 banks, each coded for the control area that failed and for how it failed.</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">10.5281/zenodo.23681035</guid>
     </item>
   </channel>
 </rss>
